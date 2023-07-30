@@ -8,8 +8,8 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
-        <ScrollToTop />
         <Route path="/" element={<Home />} />
         <Route path="products" element={<Product />} />
         <Route path="contact" element={<Contact />} />
