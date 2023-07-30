@@ -1,0 +1,25 @@
+.contactContainer {
+  width: 100%;
+  max-width: 390px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+.bgImageContact {
+  background-image: url(../../assets/contactBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimgcontacthere {
+  background-image: url(../../assets/contactboximg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) and (max-width: 1060px) {
+  .contactContainer {
+    width: 100%;
+    max-width: 390px;
+    height: 300px;
+  }
+}

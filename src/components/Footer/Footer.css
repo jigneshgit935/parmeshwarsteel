@@ -1,0 +1,17 @@
+.footerBackground {
+  background-color: #0b2d39;
+  color: #f3f4f8;
+}
+
+.footerLogoHere {
+  width: 100px;
+  display: flex;
+  margin: auto;
+}
+
+.link-tagfooter {
+  cursor: pointer;
+  color: #fff;
+  transition: 0.1s all ease-in-out;
+  text-decoration: none;
+}
