@@ -64,7 +64,7 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -115,40 +115,5 @@
   .navbarlogoherer {
     width: 300px;
     height: 80px;
-  }
-}
-
-/* Layoyt */
-.whatsapp_float {
-  position: fixed;
-  width: 65px;
-  height: 65px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-}
-
-.whatsapp-icon {
-  margin-top: 16px;
-}
-
-/* for mobile */
-@media screen and (max-width: 767px) {
-  .whatsapp-icon {
-    margin-top: 10px;
-  }
-
-  .whatsapp_float {
-    width: 40px;
-    height: 40px;
-    bottom: 20px;
-    right: 10px;
-    font-size: 22px;
   }
 }
