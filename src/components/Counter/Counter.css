@@ -1,0 +1,10 @@
+.counter-row {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.bgCounterImage {
+  background-image: url(../../assets/counterBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
