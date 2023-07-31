@@ -67,11 +67,21 @@ const Footer = () => {
             <div className="px-2 ">
               <h4 className="pb-4">Products</h4>
               <ul className="list-unstyled">
-                <li className="">Pipe Fittings</li>
-                <li className="mt-lg-3 mt-md-3 mt-3">Flanges</li>
-                <li className="mt-lg-3 mt-md-3 mt-3">Fasteners</li>
-                <li className="mt-lg-3 mt-md-3 mt-3">Gaskets</li>
-                <li className="mt-lg-3 mt-md-3 mt-3">Pipe Spools</li>
+                <Link to="products" className="link-tagfooter">
+                  <li className="">Pipe Fittings</li>
+                </Link>
+                <Link to="products" className="link-tagfooter">
+                  <li className="mt-lg-3 mt-md-3 mt-3">Flanges</li>
+                </Link>
+                <Link to="products" className="link-tagfooter">
+                  <li className="mt-lg-3 mt-md-3 mt-3">Fasteners</li>
+                </Link>
+                <Link to="products" className="link-tagfooter">
+                  <li className="mt-lg-3 mt-md-3 mt-3">Gaskets</li>
+                </Link>
+                <Link to="products" className="link-tagfooter">
+                  <li className="mt-lg-3 mt-md-3 mt-3">Pipe Spools</li>
+                </Link>
               </ul>
             </div>
           </div>

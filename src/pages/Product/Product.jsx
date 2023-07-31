@@ -11,6 +11,7 @@ import ImageEight from '../../assets/img8.jpg';
 import ImageNine from '../../assets/img9.jpg';
 import { Table } from 'react-bootstrap';
 import Layout from '../../components/Layout/Layout';
+import { Link } from 'react-router-dom';
 
 const dataone = [
   { cities: 'Banglore' },
@@ -179,12 +180,14 @@ const Product = () => {
                     />
                   </div>
                   <h1 className="mt-lg-2 mt-4">{item.name}</h1>
-                  <button
-                    className="mt-2 px-5 py-2 rounded-5 bg-transparent"
-                    style={{ fontSize: '18px' }}
-                  >
-                    Learn More
-                  </button>
+                  <Link to="/contact">
+                    <button
+                      className="mt-2 px-5 py-2 rounded-5 bg-transparent"
+                      style={{ fontSize: '18px' }}
+                    >
+                      Learn More
+                    </button>
+                  </Link>
                 </div>
               );
             })}
