@@ -6,7 +6,7 @@
   border-radius: 10px;
 }
 .bgImageContact {
-  background-image: url(../../assets/contactBg.jpg);
+  background-image: url(../../assets/contactBg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
