@@ -103,8 +103,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 60px;
-    top: 0;
+    left: 56%;
+    top: 105%;
   }
 
   .prevArrorDesignIndustries {
@@ -116,8 +116,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 10px;
-    top: 0;
+    left: 32%;
+    top: 105%;
     z-index: 999;
   }
 }
