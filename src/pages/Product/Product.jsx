@@ -111,38 +111,47 @@ const dataelven = [
 ];
 const productData = [
   {
+    link: '/fittings',
     name: 'Fittings',
     img: ImageOne,
   },
   {
+    link: '/pipes',
     name: 'Pipes',
     img: ImageTwo,
   },
   {
+    link: '/flanges',
     name: 'Flanges',
     img: ImageThree,
   },
   {
+    link: '/ic-fittings',
     name: 'IC Fittings',
     img: ImageFor,
   },
   {
+    link: '/dairy-fittings',
     name: 'Dairy Fittings',
     img: ImageFive,
   },
   {
+    link: '/bspt-fittings',
     name: 'BSPT Fittings',
     img: ImageSix,
   },
   {
+    link: '/steel-caps',
     name: 'Steel Caps',
     img: ImageSeven,
   },
   {
+    link: '/steel-sheets',
     name: 'Steel Sheets',
     img: ImageEight,
   },
   {
+    link: '/wires',
     name: 'Wires',
     img: ImageNine,
   },
@@ -180,7 +189,7 @@ const Product = () => {
                     />
                   </div>
                   <h1 className="mt-lg-2 mt-4">{item.name}</h1>
-                  <Link to="/contact">
+                  <Link to={item.link}>
                     <button
                       className="mt-2 px-5 py-2 rounded-5 bg-transparent"
                       style={{ fontSize: '18px' }}
