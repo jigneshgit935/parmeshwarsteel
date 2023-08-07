@@ -7,10 +7,14 @@ const ProductsDetails = (props) => {
     <Layout>
       <div className="bg-primary py-5 px-5">
         <Link to="/products">
-          <button className="px-3 py-2 rounded ">Back to Products Page</button>
+          <button className="px-3 py-2  rounded ">Back to Products Page</button>
         </Link>
-        <div className="my-5">
+        <div className="my-5 text-center">
           <h1 className="display-2">{props.h1}</h1>
+
+          <h5 className="display-6 mt-5">
+            More details to add about ({props.h1})
+          </h5>
         </div>
       </div>
     </Layout>
