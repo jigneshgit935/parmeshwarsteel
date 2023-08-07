@@ -9,7 +9,7 @@ const ProductsDetails = (props) => {
         <Link to="/products">
           <button className="px-3 py-2 rounded ">Back to Products Page</button>
         </Link>
-        <div className="my-5 bg-danger">
+        <div className="my-5">
           <h1 className="display-2">{props.h1}</h1>
         </div>
       </div>
