@@ -13,7 +13,7 @@ const ProductsDetails = (props) => {
           <h1 className="display-2">{props.h1}</h1>
 
           <h5 className="display-6 mt-5">
-            More details to add about ({props.h1})
+            More details to add about... ({props.h1})
           </h5>
         </div>
       </div>
