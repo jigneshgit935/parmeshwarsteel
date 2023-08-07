@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const ProductsDetails = (props) => {
   return (
     <Layout>
-      <div>
+      <div className="bg-primary py-5">
         <Link to="/products">
-          <button className="px-3 py-2 rounded bg-primary">
+          <button className="px-3 py-2 my-3 rounded ">
             Back to Products Page
           </button>
         </Link>
