@@ -13,183 +13,183 @@ import './Slider.css';
 
 const imagesData = [
   {
+    class: 'sliderImageSize',
     images: Diamond,
   },
   {
+    class: 'sliderImageSize',
+
     images: Nation,
   },
   {
+    class: 'sliderImageSize',
+
     images: Sumitomo,
   },
   {
+    class: 'sliderImageSize',
+
     images: Welspon,
   },
   {
+    class: 'sliderImageSize',
+
     images: VBeverages,
   },
   {
+    class: 'sliderImageSize',
+
     images: Bajaj,
   },
   {
+    class: 'slideImageExtraLarge',
     images: ShivanAutoTech,
   },
   {
+    class: 'slideImageExtraLarge',
     images: BKT,
   },
   {
+    class: 'slideImageExtraLarge',
     images: JBMGroup,
   },
   {
+    class: 'slideImageExtraLarge',
     images: Hydrobenjg,
   },
   {
+    class: 'sliderImageSize',
     images: Diamond,
   },
   {
+    class: 'sliderImageSize',
+
     images: Nation,
   },
   {
+    class: 'sliderImageSize',
+
     images: Sumitomo,
   },
   {
+    class: 'sliderImageSize',
+
     images: Welspon,
   },
   {
+    class: 'sliderImageSize',
+
     images: VBeverages,
   },
   {
+    class: 'sliderImageSize',
+
     images: Bajaj,
   },
   {
+    class: 'slideImageExtraLarge',
     images: ShivanAutoTech,
   },
   {
+    class: 'slideImageExtraLarge',
     images: BKT,
   },
   {
+    class: 'slideImageExtraLarge',
     images: JBMGroup,
   },
   {
+    class: 'slideImageExtraLarge',
     images: Hydrobenjg,
   },
   {
+    class: 'sliderImageSize',
     images: Diamond,
   },
   {
+    class: 'sliderImageSize',
+
     images: Nation,
   },
   {
+    class: 'sliderImageSize',
+
     images: Sumitomo,
   },
   {
+    class: 'sliderImageSize',
+
     images: Welspon,
   },
   {
+    class: 'sliderImageSize',
+
     images: VBeverages,
   },
   {
+    class: 'sliderImageSize',
+
     images: Bajaj,
   },
   {
+    class: 'slideImageExtraLarge',
     images: ShivanAutoTech,
   },
   {
+    class: 'slideImageExtraLarge',
     images: BKT,
   },
   {
+    class: 'slideImageExtraLarge',
     images: JBMGroup,
   },
   {
+    class: 'slideImageExtraLarge',
     images: Hydrobenjg,
   },
   {
+    class: 'sliderImageSize',
     images: Diamond,
   },
   {
+    class: 'sliderImageSize',
+
     images: Nation,
   },
   {
+    class: 'sliderImageSize',
+
     images: Sumitomo,
   },
   {
+    class: 'sliderImageSize',
+
     images: Welspon,
   },
   {
+    class: 'sliderImageSize',
+
     images: VBeverages,
   },
   {
+    class: 'sliderImageSize',
+
     images: Bajaj,
   },
   {
+    class: 'slideImageExtraLarge',
     images: ShivanAutoTech,
   },
   {
+    class: 'slideImageExtraLarge',
     images: BKT,
   },
   {
+    class: 'slideImageExtraLarge',
     images: JBMGroup,
   },
   {
-    images: Hydrobenjg,
-  },
-  {
-    images: Diamond,
-  },
-  {
-    images: Nation,
-  },
-  {
-    images: Sumitomo,
-  },
-  {
-    images: Welspon,
-  },
-  {
-    images: VBeverages,
-  },
-  {
-    images: Bajaj,
-  },
-  {
-    images: ShivanAutoTech,
-  },
-  {
-    images: BKT,
-  },
-  {
-    images: JBMGroup,
-  },
-  {
-    images: Hydrobenjg,
-  },
-  {
-    images: Diamond,
-  },
-  {
-    images: Nation,
-  },
-  {
-    images: Sumitomo,
-  },
-  {
-    images: Welspon,
-  },
-  {
-    images: VBeverages,
-  },
-  {
-    images: Bajaj,
-  },
-  {
-    images: ShivanAutoTech,
-  },
-  {
-    images: BKT,
-  },
-  {
-    images: JBMGroup,
-  },
-  {
+    class: 'slideImageExtraLarge',
     images: Hydrobenjg,
   },
 ];
@@ -205,7 +205,14 @@ const Slider = () => {
       <div className="logos">
         <div className="logos-slide">
           {imagesData.map((item, index) => {
-            return <img key={index} src={item.images} alt="" className="" />;
+            return (
+              <img
+                key={index}
+                src={item.images}
+                alt=""
+                className={item.class}
+              />
+            );
           })}
         </div>
       </div>
