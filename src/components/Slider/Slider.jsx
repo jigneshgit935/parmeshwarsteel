@@ -5,6 +5,10 @@ import Sumitomo from '../../assets/sumitomo.JPG';
 import Welspon from '../../assets/welspon.jpg';
 import VBeverages from '../../assets/varun.png';
 import Bajaj from '../../assets/bajaj.JPG';
+import ShivanAutoTech from '../../assets/shivam autotech.jpg';
+import BKT from '../../assets/bkt.png';
+import JBMGroup from '../../assets/jbm group.png';
+import Hydrobenjg from '../../assets/hydrobenj ind pvt ltd.jpg';
 import './Slider.css';
 
 const imagesData = [
@@ -27,22 +31,16 @@ const imagesData = [
     images: Bajaj,
   },
   {
-    images: Diamond,
+    images: ShivanAutoTech,
   },
   {
-    images: Nation,
+    images: BKT,
   },
   {
-    images: Sumitomo,
+    images: JBMGroup,
   },
   {
-    images: Welspon,
-  },
-  {
-    images: VBeverages,
-  },
-  {
-    images: Bajaj,
+    images: Hydrobenjg,
   },
   {
     images: Diamond,
@@ -63,22 +61,16 @@ const imagesData = [
     images: Bajaj,
   },
   {
-    images: Diamond,
+    images: ShivanAutoTech,
   },
   {
-    images: Nation,
+    images: BKT,
   },
   {
-    images: Sumitomo,
+    images: JBMGroup,
   },
   {
-    images: Welspon,
-  },
-  {
-    images: VBeverages,
-  },
-  {
-    images: Bajaj,
+    images: Hydrobenjg,
   },
   {
     images: Diamond,
@@ -99,22 +91,16 @@ const imagesData = [
     images: Bajaj,
   },
   {
-    images: Diamond,
+    images: ShivanAutoTech,
   },
   {
-    images: Nation,
+    images: BKT,
   },
   {
-    images: Sumitomo,
+    images: JBMGroup,
   },
   {
-    images: Welspon,
-  },
-  {
-    images: VBeverages,
-  },
-  {
-    images: Bajaj,
+    images: Hydrobenjg,
   },
   {
     images: Diamond,
@@ -133,6 +119,228 @@ const imagesData = [
   },
   {
     images: Bajaj,
+  },
+  {
+    images: ShivanAutoTech,
+  },
+  {
+    images: BKT,
+  },
+  {
+    images: JBMGroup,
+  },
+  {
+    images: Hydrobenjg,
+  },
+  {
+    images: Diamond,
+  },
+  {
+    images: Nation,
+  },
+  {
+    images: Sumitomo,
+  },
+  {
+    images: Welspon,
+  },
+  {
+    images: VBeverages,
+  },
+  {
+    images: Bajaj,
+  },
+  {
+    images: ShivanAutoTech,
+  },
+  {
+    images: BKT,
+  },
+  {
+    images: JBMGroup,
+  },
+  {
+    images: Hydrobenjg,
+  },
+  {
+    images: Diamond,
+  },
+  {
+    images: Nation,
+  },
+  {
+    images: Sumitomo,
+  },
+  {
+    images: Welspon,
+  },
+  {
+    images: VBeverages,
+  },
+  {
+    images: Bajaj,
+  },
+  {
+    images: ShivanAutoTech,
+  },
+  {
+    images: BKT,
+  },
+  {
+    images: JBMGroup,
+  },
+  {
+    images: Hydrobenjg,
+  },
+  {
+    images: Diamond,
+  },
+  {
+    images: Nation,
+  },
+  {
+    images: Sumitomo,
+  },
+  {
+    images: Welspon,
+  },
+  {
+    images: VBeverages,
+  },
+  {
+    images: Bajaj,
+  },
+  {
+    images: ShivanAutoTech,
+  },
+  {
+    images: BKT,
+  },
+  {
+    images: JBMGroup,
+  },
+  {
+    images: Hydrobenjg,
+  },
+  {
+    images: Diamond,
+  },
+  {
+    images: Nation,
+  },
+  {
+    images: Sumitomo,
+  },
+  {
+    images: Welspon,
+  },
+  {
+    images: VBeverages,
+  },
+  {
+    images: Bajaj,
+  },
+  {
+    images: ShivanAutoTech,
+  },
+  {
+    images: BKT,
+  },
+  {
+    images: JBMGroup,
+  },
+  {
+    images: Hydrobenjg,
+  },
+  {
+    images: Diamond,
+  },
+  {
+    images: Nation,
+  },
+  {
+    images: Sumitomo,
+  },
+  {
+    images: Welspon,
+  },
+  {
+    images: VBeverages,
+  },
+  {
+    images: Bajaj,
+  },
+  {
+    images: ShivanAutoTech,
+  },
+  {
+    images: BKT,
+  },
+  {
+    images: JBMGroup,
+  },
+  {
+    images: Hydrobenjg,
+  },
+  {
+    images: Diamond,
+  },
+  {
+    images: Nation,
+  },
+  {
+    images: Sumitomo,
+  },
+  {
+    images: Welspon,
+  },
+  {
+    images: VBeverages,
+  },
+  {
+    images: Bajaj,
+  },
+  {
+    images: ShivanAutoTech,
+  },
+  {
+    images: BKT,
+  },
+  {
+    images: JBMGroup,
+  },
+  {
+    images: Hydrobenjg,
+  },
+  {
+    images: Diamond,
+  },
+  {
+    images: Nation,
+  },
+  {
+    images: Sumitomo,
+  },
+  {
+    images: Welspon,
+  },
+  {
+    images: VBeverages,
+  },
+  {
+    images: Bajaj,
+  },
+  {
+    images: ShivanAutoTech,
+  },
+  {
+    images: BKT,
+  },
+  {
+    images: JBMGroup,
+  },
+  {
+    images: Hydrobenjg,
   },
 ];
 
