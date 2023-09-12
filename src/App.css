@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Kanit', sans-serif; */
+  font-family: 'Cabin', sans-serif;
 }
