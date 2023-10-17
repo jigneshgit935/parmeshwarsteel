@@ -3,26 +3,37 @@ import Layout from '../Layout/Layout';
 import { Link } from 'react-router-dom';
 import Diamond from '../../assets/diamond.jpg';
 import { Table } from 'react-bootstrap';
+import { BsArrowLeft } from 'react-icons/bs';
+import './ProductsDetails.css';
 
 const ProductsDetails = (props) => {
   console.log(props);
   return (
     <Layout>
-      <div className="py-3 px-3">
+      <div className="py-3 px-3 ">
         <div className="">
           <Link to="/products">
-            <button className="px-3 py-2 rounded ">
-              Back to Products Page
+            <button
+              className="px-1 py-1 bg-white"
+              style={{
+                borderRadius: '50%',
+                border: '2px solid #015583',
+                overflow: 'hidden',
+              }}
+            >
+              <BsArrowLeft size={30} color="#015583" />
             </button>
           </Link>
-          <div className="d-flex flex-column justify-content-center align-items-center py-lg-4 py-2">
-            <h1 className="display-1 fw-bold m-0">{props.h1}</h1>
+          <div className="d-flex  flex-column justify-content-center align-items-center py-2">
+            <h1 className="display-1 fw-bold m-0 col-12 text-center">
+              {props.h1}
+            </h1>
             <div
               className="image-block border my-3"
               style={{
                 width: '600px',
                 maxWidth: '100%',
-                height: '200px',
+                height: '250px',
                 overflow: 'hidden',
                 borderRadius: '10px',
               }}
