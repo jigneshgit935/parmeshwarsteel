@@ -70,7 +70,7 @@ const ProductsDetails = (props) => {
                 <tbody className="text-center">
                   {props.productTables.heading.map((item) => (
                     <tr>
-                      <th style={{ width: '150px' }}>{item.Srno}</th>
+                      <th className="table-th-width">{item.Srno}</th>
                       <th>{item.title}</th>
                     </tr>
                   ))}
