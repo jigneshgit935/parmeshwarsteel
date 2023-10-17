@@ -80,9 +80,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a href="#about" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/#about"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link

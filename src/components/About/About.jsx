@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Pipe from '../../assets/pipe.jpg';
 import './About.css';
 
 const About = () => {
+  const targetRef = useRef();
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetElement = document.querySelector(hash);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          duration: '6000ms',
+        });
+      }
+    }
+  }, []);
   return (
-    <div className=" px-lg-5 px-md-4 px-3 py-5">
-      <div id="about" className="py-lg-5 py-0 ">
+    <div ref={targetRef} id="about" className="px-lg-5 px-md-4 px-3 py-5">
+      <div className="py-lg-5 py-0 ">
         <div className="d-flex flex-wrap ">
           <div className="col-lg-6 col-12 d-flex  justify-content-center align-items-center">
             <img

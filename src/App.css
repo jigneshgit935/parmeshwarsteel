@@ -19,3 +19,10 @@
 ::-webkit-scrollbar-thumb {
   background: #ecd06f;
 }
+
+.container-width {
+  max-width: 1560px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}

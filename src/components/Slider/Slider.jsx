@@ -193,7 +193,10 @@ const imagesData = [
     images: Hydrobenjg,
   },
 ];
-
+const customStyles = {
+  // Define your custom CSS variables here
+  '--t': '60s',
+};
 const Slider = () => {
   return (
     <div className="py-5">
@@ -203,7 +206,7 @@ const Slider = () => {
         </h1>
       </div>
       <div className="logos">
-        <div className="logos-slide">
+        <div className="logos-slide" style={customStyles}>
           {imagesData.map((item, index) => {
             return (
               <img
