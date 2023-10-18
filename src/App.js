@@ -8,12 +8,13 @@ import About from './components/About/About';
 import Fittings from './pages/Fittings';
 import Pipes from './pages/Pipes';
 import Flanges from './pages/Flanges';
-import ICFittings from './pages/ICFittings';
-import DairyFittings from './pages/DariyFittings';
+import ICFittings from './pages/BoldFastners';
+import DairyFittings from './pages/AngleChannels';
 import BSPTFittings from './pages/BSPTFittings';
-import SteelCaps from './pages/SteelCaps';
-import SteelSheets from './pages/SteelSheets';
 import Wire from './pages/Wire';
+import BarsWires from './pages/BarsWires';
+import SteelPlates from './pages/SteelPlates';
+import AngleChannels from './pages/AngleChannels';
 
 function App() {
   return (
@@ -27,11 +28,11 @@ function App() {
         <Route path="/fittings" element={<Fittings />} />
         <Route path="/pipes" element={<Pipes />} />
         <Route path="/flanges" element={<Flanges />} />
-        <Route path="/ic-fittings" element={<ICFittings />} />
-        <Route path="/dairy-fittings" element={<DairyFittings />} />
+        <Route path="/bold-fastners" element={<ICFittings />} />
+        <Route path="/angle-channels" element={<AngleChannels />} />
         <Route path="/bspt-fittings" element={<BSPTFittings />} />
-        <Route path="/steel-caps" element={<SteelCaps />} />
-        <Route path="/steel-sheets" element={<SteelSheets />} />
+        <Route path="/bars-wires" element={<BarsWires />} />
+        <Route path="/steets-plates" element={<SteelPlates />} />
         <Route path="/wires" element={<Wire />} />
       </Routes>
     </div>

@@ -48,71 +48,83 @@ const ProductsDetails = (props) => {
                 }}
               />
             </div>
-            <p
-              className="text-center"
-              style={{ fontSize: '20px', textAlign: 'justify' }}
-            >
-              {props.aboutSection.paragraph1}
-            </p>
-          </div>
-          <div className="my-4">
-            <div className="px-lg-5 px-3">
-              <div className="py-2 bg-primary">
-                <h4 className="text-white my-auto text-center">
-                  {props.productTables.title}
-                </h4>
-              </div>
-              <Table
-                bordered
-                responsive="md"
-                style={{ border: '1px solid #000' }}
+            {props.aboutSection.length !== 0 ? (
+              <p
+                className="text-center"
+                style={{ fontSize: '20px', textAlign: 'justify' }}
               >
-                <tbody className="text-center">
-                  {props.productTables.heading.map((item) => (
-                    <tr>
-                      <th className="table-th-width">{item.Srno}</th>
-                      <th>{item.title}</th>
-                    </tr>
-                  ))}
-                  {props.productTables.points.map((item) => (
-                    <tr>
-                      <td>{item.id}</td>
-                      <td>{item.points}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </Table>
-            </div>
+                {props.aboutSection.paragraph1}
+              </p>
+            ) : (
+              ''
+            )}
           </div>
-          <div className="my-4">
-            <div className="px-lg-5 px-3">
-              <div className="py-2 bg-primary">
-                <h4 className="text-white my-auto text-center">
-                  {props.productTables.title1}
-                </h4>
+          {!props.productTables.points ? (
+            ''
+          ) : (
+            <div className="my-4">
+              <div className="px-lg-5 px-3">
+                <div className="py-2 bg-primary">
+                  <h4 className="text-white my-auto text-center">
+                    {props.productTables.title}
+                  </h4>
+                </div>
+                <Table
+                  bordered
+                  responsive="md"
+                  style={{ border: '1px solid #000' }}
+                >
+                  <tbody className="text-center">
+                    {props.productTables.heading.map((item) => (
+                      <tr>
+                        <th className="table-th-width">{item.Srno}</th>
+                        <th>{item.title}</th>
+                      </tr>
+                    ))}
+                    {props.productTables.points.map((item) => (
+                      <tr>
+                        <td>{item.id}</td>
+                        <td>{item.points}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </Table>
               </div>
-              <Table
-                bordered
-                responsive="md"
-                style={{ border: '1px solid #000' }}
-              >
-                <tbody className="text-center">
-                  {props.productTables.heading1.map((item) => (
-                    <tr>
-                      <th className="table-th-width">{item.Srno}</th>
-                      <th>{item.title}</th>
-                    </tr>
-                  ))}
-                  {props.productTables.points1.map((item) => (
-                    <tr>
-                      <td>{item.id}</td>
-                      <td>{item.points}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </Table>
             </div>
-          </div>
+          )}
+          {!props.productTables.points1 ? (
+            ''
+          ) : (
+            <div className="my-4">
+              <div className="px-lg-5 px-3">
+                <div className="py-2 bg-primary">
+                  <h4 className="text-white my-auto text-center">
+                    {props.productTables.title1}
+                  </h4>
+                </div>
+                <Table
+                  bordered
+                  responsive="md"
+                  style={{ border: '1px solid #000' }}
+                >
+                  <tbody className="text-center">
+                    {props.productTables.heading1.map((item) => (
+                      <tr>
+                        <th className="table-th-width">{item.Srno}</th>
+                        <th>{item.title}</th>
+                      </tr>
+                    ))}
+                    {props.productTables.points1.map((item) => (
+                      <tr>
+                        <td>{item.id}</td>
+                        <td>{item.points}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </Table>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </Layout>

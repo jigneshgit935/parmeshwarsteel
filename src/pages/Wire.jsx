@@ -10,21 +10,26 @@ const Wire = () => {
       paragraph1:
         'Flanges are used to connect pipes with each other, to valves, to fittings, and to specialty items such as strainers and pressure vessels. A cover plate can be connected to create a blind flange. Flanges are joined by bolting, and sealing is often completed with the use of gaskets or other methods.',
     },
+    productTables: {
+      title: 'Types of Flanges',
+      title1: 'Metal Available for Flanges',
+      heading: [{ Srno: 'Sr.no', title: 'Flanges' }],
+      heading1: [{ Srno: 'Sr.no', title: 'Metal' }],
 
-    benefitsSection: {
-      title: 'Benefits of Hiring Dedicated Angular JS Developers',
-      keyPoints: [
-        'Improve Project Outcomes',
-        'Cost-effective',
-        'No investment On Hardware/Software Requirement',
-        'Get Access to Skilled Developers',
-        'Agile Approach',
-        'Collaborative Engagement',
-        'Painless Project Management',
-        'Greater focus on business',
+      points1: [
+        { id: '1', points: 'MS' },
+        { id: '2', points: 'Copper' },
+        { id: '3', points: 'Steel' },
+        { id: '4', points: 'Bronze' },
+        { id: '5', points: 'Stainless-Steel' },
+        { id: '6', points: 'Alluminium' },
+        { id: '7', points: 'Nickel' },
+        { id: '8', points: 'Monel' },
+        { id: '9', points: 'Gunmetel' },
+        { id: '10', points: 'Brass' },
+        { id: '11', points: 'Non-Ferrous Allow' },
+        { id: '12', points: 'Ferrous Allow' },
       ],
-      image:
-        'https://images.unsplash.com/photo-1603404235009-71c1f80e31fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
     },
   };
   return <ProductsDetails {...post} />;

@@ -1,19 +1,16 @@
 import React from 'react';
 import ProductsDetails from '../components/ProductsDetails/ProductsDetails';
 
-const BSPTFittings = () => {
+const SteelPlates = () => {
   const post = {
     title: '',
     metaDescription: '',
-    h1: 'BSPTFittings',
-    aboutSection: {
-      paragraph1:
-        'Flanges are used to connect pipes with each other, to valves, to fittings, and to specialty items such as strainers and pressure vessels. A cover plate can be connected to create a blind flange. Flanges are joined by bolting, and sealing is often completed with the use of gaskets or other methods.',
-    },
+    h1: 'Steets / PLates',
+    aboutSection: {},
 
     productTables: {
       title: 'Types of Flanges',
-      title1: 'Metal Available for Flanges',
+      title1: 'Metal Available for Steets / PLates',
       heading: [{ Srno: 'Sr.no', title: 'Flanges' }],
       heading1: [{ Srno: 'Sr.no', title: 'Metal' }],
 
@@ -36,4 +33,4 @@ const BSPTFittings = () => {
   return <ProductsDetails {...post} />;
 };
 
-export default BSPTFittings;
+export default SteelPlates;

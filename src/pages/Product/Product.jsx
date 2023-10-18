@@ -126,34 +126,24 @@ const productData = [
     img: ImageThree,
   },
   {
-    link: '/ic-fittings',
-    name: 'IC Fittings',
+    link: '/bold-fastners',
+    name: 'Bold / Fastners',
     img: ImageFor,
   },
   {
-    link: '/dairy-fittings',
-    name: 'Dairy Fittings',
+    link: '/angle-channels',
+    name: 'Angle / Channels',
     img: ImageFive,
   },
   {
-    link: '/bspt-fittings',
-    name: 'BSPT Fittings',
-    img: ImageSix,
-  },
-  {
-    link: '/steel-caps',
-    name: 'Steel Caps',
-    img: ImageSeven,
-  },
-  {
-    link: '/steel-sheets',
-    name: 'Steel Sheets',
+    link: '/steets-plates',
+    name: 'Steets / PLates',
     img: ImageEight,
   },
   {
-    link: '/wires',
-    name: 'Wires',
-    img: ImageNine,
+    link: '/bars-wires',
+    name: 'Bars / Wines',
+    img: ImageSeven,
   },
 ];
 

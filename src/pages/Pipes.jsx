@@ -6,9 +6,7 @@ const Pipes = () => {
     title: '',
     metaDescription: '',
     h1: 'Pipes',
-    aboutSection: {
-      paragraph1: 'no introduction',
-    },
+    aboutSection: {},
 
     productTables: {
       title: 'Types of Pipes',
