@@ -9,7 +9,6 @@ import Fittings from './pages/Fittings';
 import Pipes from './pages/Pipes';
 import Flanges from './pages/Flanges';
 import ICFittings from './pages/BoldFastners';
-import DairyFittings from './pages/AngleChannels';
 import BSPTFittings from './pages/BSPTFittings';
 import Wire from './pages/Wire';
 import BarsWires from './pages/BarsWires';
