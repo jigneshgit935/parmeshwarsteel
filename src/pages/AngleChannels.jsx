@@ -14,9 +14,17 @@ const AngleChannels = () => {
     productTables: {
       title: 'Types of Flanges',
       title1: 'Metal Available for Angle / Channels',
-      heading: [{ Srno: 'Sr.no', title: 'Flanges' }],
+      heading: [{ Srno: 'Sr.no', title: 'Angle / Channels' }],
       heading1: [{ Srno: 'Sr.no', title: 'Metal' }],
-
+      points: [
+        { id: '1', points: 'Basic Angle' },
+        { id: '2', points: 'Equal Angle' },
+        { id: '3', points: 'Unequal Angle' },
+        { id: '4', points: 'C Channels' },
+        { id: '5', points: 'Hat Channels' },
+        { id: '6', points: 'U Channels' },
+        { id: '7', points: 'J Channels' },
+      ],
       points1: [
         { id: '1', points: 'MS' },
         { id: '2', points: 'Copper' },
