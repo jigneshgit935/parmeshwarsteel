@@ -12,7 +12,7 @@ const AngleChannels = () => {
     },
 
     productTables: {
-      title: 'Types of Flanges',
+      title: 'Types of Angle / Channels',
       title1: 'Metal Available for Angle / Channels',
       heading: [{ Srno: 'Sr.no', title: 'Angle / Channels' }],
       heading1: [{ Srno: 'Sr.no', title: 'Metal' }],
