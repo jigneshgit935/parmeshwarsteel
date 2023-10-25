@@ -1,10 +1,12 @@
 import React from 'react';
 import ProductsDetails from '../components/ProductsDetails/ProductsDetails';
+import FittingsImage from '../assets/fittingInside.jpg';
 
 const Fittings = () => {
   const post = {
     title: '',
     metaDescription: '',
+    imageSection: FittingsImage,
     h1: 'Fittings',
     aboutSection: {
       paragraph1:

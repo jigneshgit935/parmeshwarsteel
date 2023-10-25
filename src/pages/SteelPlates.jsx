@@ -1,10 +1,13 @@
 import React from 'react';
 import ProductsDetails from '../components/ProductsDetails/ProductsDetails';
+import SheetImage from '../assets/sheetplateinside.jpeg';
 
 const SteelPlates = () => {
   const post = {
     title: '',
     metaDescription: '',
+    imageSection: SheetImage,
+
     h1: 'Steets / PLates',
     aboutSection: {},
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import ProductsDetails from '../components/ProductsDetails/ProductsDetails';
+import WireBarsImage from '../assets/barsImage.jpg';
 
 const Wire = () => {
   const post = {
     title: '',
     metaDescription: ' ',
+    imageSection: WireBarsImage,
     h1: 'Wire',
     aboutSection: {
       paragraph1:

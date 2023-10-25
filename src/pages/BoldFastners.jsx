@@ -1,10 +1,12 @@
 import React from 'react';
 import ProductsDetails from '../components/ProductsDetails/ProductsDetails';
+import BoltsImage from '../assets/boltInside.jpg';
 
 const BoldFastners = () => {
   const post = {
     title: '',
     metaDescription: '',
+    imageSection: BoltsImage,
     h1: 'Bold / Fastners',
     aboutSection: {
       paragraph1:

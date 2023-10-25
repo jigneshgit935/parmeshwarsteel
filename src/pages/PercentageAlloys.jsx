@@ -1,32 +1,23 @@
 import React from 'react';
 import ProductsDetails from '../components/ProductsDetails/ProductsDetails';
-import FlangesImage from '../assets/flangesInside.jpg';
+import PercentageAlloysImage from '../assets/specialalloy.jpg';
 
-const Flanges = () => {
+const PercentageAlloys = () => {
   const post = {
     title: '',
     metaDescription: '',
-    h1: 'Flanges',
-    imageSection: FlangesImage,
+    h1: 'Percentage Alloys',
+    imageSection: PercentageAlloysImage,
     aboutSection: {
       paragraph1:
-        'Flanges are used to connect pipes with each other, to valves, to fittings, and to specialty items such as strainers and pressure vessels. A cover plate can be connected to create a blind flange. Flanges are joined by bolting, and sealing is often completed with the use of gaskets or other methods.',
+        'Alloys are not pure metals but the combination of two or more elements, one of which must be a metal. The result of this mixture is a material whose properties are significantly different from those of the constituent elements. For this reason, there is a wide range of characteristics that are achievable depending on the specific compound, and an equally wide range of applications. Alloys have the following characteristics:',
     },
 
     productTables: {
       title: 'Types of Flanges',
-      title1: 'Metal Available for Flanges',
+      title1: 'Metal Available for Percentage Alloys',
       heading: [{ Srno: 'Sr.no', title: 'Flanges' }],
       heading1: [{ Srno: 'Sr.no', title: 'Metal' }],
-      points: [
-        { id: '1', points: 'Weld neck Flange' },
-        { id: '2', points: 'Slip on Flange' },
-        { id: '3', points: 'Blind Flange' },
-        { id: '4', points: 'Socket Weld Flange' },
-        { id: '5', points: 'Pipe Flange' },
-        { id: '6', points: 'Threaded Flange' },
-        { id: '7', points: 'Lap Joint Flange (RTJ)' },
-      ],
       points1: [
         { id: '1', points: 'MS' },
         { id: '2', points: 'Copper' },
@@ -46,4 +37,4 @@ const Flanges = () => {
   return <ProductsDetails {...post} />;
 };
 
-export default Flanges;
+export default PercentageAlloys;

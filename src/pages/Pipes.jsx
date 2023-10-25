@@ -1,13 +1,14 @@
 import React from 'react';
 import ProductsDetails from '../components/ProductsDetails/ProductsDetails';
+import PipesImage from '../assets/pipesInside.jpg';
 
 const Pipes = () => {
   const post = {
     title: '',
     metaDescription: '',
     h1: 'Pipes',
+    imageSection: PipesImage,
     aboutSection: {},
-
     productTables: {
       title: 'Types of Pipes',
       title1: 'Metal Available for Pipes',

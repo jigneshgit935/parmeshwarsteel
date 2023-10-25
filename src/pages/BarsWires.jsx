@@ -1,11 +1,13 @@
 import React from 'react';
 import ProductsDetails from '../components/ProductsDetails/ProductsDetails';
+import BarsImage from '../assets/barandwire.jpeg';
 
 const BarsWires = () => {
   const post = {
     title: '',
     metaDescription: '',
-    h1: 'Bars / Wines',
+    imageSection: BarsImage,
+    h1: 'Bars / Wires',
     aboutSection: {},
 
     productTables: {

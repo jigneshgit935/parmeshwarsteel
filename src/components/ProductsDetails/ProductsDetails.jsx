@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../Layout/Layout';
 import { Link } from 'react-router-dom';
-import Diamond from '../../assets/diamond.jpg';
 import { Table } from 'react-bootstrap';
 import { BsArrowLeft } from 'react-icons/bs';
 import './ProductsDetails.css';
@@ -39,7 +38,7 @@ const ProductsDetails = (props) => {
               }}
             >
               <img
-                src={Diamond}
+                src={props.imageSection}
                 alt={props.h1}
                 className="img-block-child border"
                 style={{

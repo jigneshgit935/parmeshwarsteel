@@ -14,6 +14,7 @@ import Wire from './pages/Wire';
 import BarsWires from './pages/BarsWires';
 import SteelPlates from './pages/SteelPlates';
 import AngleChannels from './pages/AngleChannels';
+import PercentageAlloys from './pages/PercentageAlloys';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
         <Route path="/bspt-fittings" element={<BSPTFittings />} />
         <Route path="/bars-wires" element={<BarsWires />} />
         <Route path="/steets-plates" element={<SteelPlates />} />
-        <Route path="/wires" element={<Wire />} />
+        <Route path="/wires-bars" element={<Wire />} />
+        <Route path="/percentage-alloys" element={<PercentageAlloys />} />
       </Routes>
     </div>
   );

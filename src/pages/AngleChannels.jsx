@@ -1,10 +1,12 @@
 import React from 'react';
 import ProductsDetails from '../components/ProductsDetails/ProductsDetails';
+import AngleImage from '../assets/angleinside.png';
 
 const AngleChannels = () => {
   const post = {
     title: '',
     metaDescription: '',
+    imageSection: AngleImage,
     h1: 'Angle / Channels',
     aboutSection: {
       paragraph1:

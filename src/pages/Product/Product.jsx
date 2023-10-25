@@ -4,9 +4,10 @@ import ImageOne from '../../assets/img1.jpg';
 import ImageTwo from '../../assets/img2.jpg';
 import ImageThree from '../../assets/img3.jpg';
 import ImageFor from '../../assets/img4.jpg';
-import ImageFive from '../../assets/img5.jpg';
-import ImageSeven from '../../assets/img7.jpg';
+import AngleChannel from '../../assets/angleMain.jpg';
+import Bars from '../../assets/bars.jpg';
 import ImageEight from '../../assets/img8.jpg';
+import ImageTen from '../../assets/img10.jpg';
 import { Table } from 'react-bootstrap';
 import Layout from '../../components/Layout/Layout';
 import { Link } from 'react-router-dom';
@@ -131,7 +132,7 @@ const productData = [
   {
     link: '/angle-channels',
     name: 'Angle / Channels',
-    img: ImageFive,
+    img: AngleChannel,
   },
   {
     link: '/steets-plates',
@@ -140,8 +141,13 @@ const productData = [
   },
   {
     link: '/bars-wires',
-    name: 'Bars / Wines',
-    img: ImageSeven,
+    name: 'Bars / Wires',
+    img: Bars,
+  },
+  {
+    link: '/percentage-alloys',
+    name: 'percentage alloys',
+    img: ImageTen,
   },
 ];
 
