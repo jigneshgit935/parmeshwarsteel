@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(true);
-    }, 100);
+    }, 2000);
   });
   return (
     <>
