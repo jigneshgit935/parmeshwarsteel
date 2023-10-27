@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import 'react-multi-carousel/lib/styles.css';
 import qualityAssurance from '../../assets/qualityAssurance.png';
 import customManufacturing from '../../assets/customManufacturing.png';
@@ -9,6 +9,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import './Services.css';
+import { motion, useInView } from 'framer-motion';
+
 const serviceData = [
   {
     icon: customManufacturing,
@@ -37,14 +39,47 @@ const serviceData = [
 ];
 
 const Services = () => {
+  const variants = {
+    initial: {
+      x: -500,
+      y: 0,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+  const ref = useRef();
+
+  const isInView = useInView(ref, { margin: '-50px' });
+
   return (
-    <div className="px-lg-5 px-4 py-lg-5 py-4 servicesbgBig">
-      <div>
-        <h1 className="fw-bold underline-for-heading text-white">Services</h1>
-      </div>
+    <motion.div
+      variants={variants}
+      initial="initial"
+      //   animate="animate"
+      whileInView="animate"
+      ref={ref}
+      animate={isInView && 'animate'}
+      className="px-lg-5 px-4 py-lg-5 py-4 servicesbgBig"
+    >
+      <motion.div variants={variants}>
+        <motion.h1
+          variants={variants}
+          className="fw-bold underline-for-heading text-white"
+        >
+          Services
+        </motion.h1>
+      </motion.div>
 
       <MultiItemCarousel />
-    </div>
+    </motion.div>
   );
 };
 
@@ -95,15 +130,32 @@ const MultiItemCarousel = () => {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
-
+  const variants = {
+    initial: {
+      x: -500,
+      y: 0,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  };
   return (
     <Slider {...settings}>
       {serviceData.map((item, index) => (
-        <div
+        <motion.div
+          variants={variants}
           key={index}
           className="px-2 d-flex justify-content-center my-5 postionArrow"
         >
           <div
+            // variants={variants}
             className="d-flex"
             style={{
               width: '320px',
@@ -128,7 +180,7 @@ const MultiItemCarousel = () => {
               <p className="mt-1">{item.subheading}</p>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </Slider>
   );

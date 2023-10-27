@@ -149,6 +149,11 @@ const productData = [
     name: 'percentage alloys',
     img: ImageTen,
   },
+  {
+    link: '/rods',
+    name: 'Rods',
+    img: ImageTen,
+  },
 ];
 
 const Product = () => {
@@ -182,7 +187,7 @@ const Product = () => {
                       className="imgWidth "
                     />
                   </div>
-                  <h1 className="mt-lg-2 mt-4">{item.name}</h1>
+                  <h1 className="mt-lg-2 text-capitalize mt-4">{item.name}</h1>
                   <Link to={item.link}>
                     <button
                       className="mt-2 px-5 py-2 rounded-5 bg-transparent"

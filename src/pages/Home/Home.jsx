@@ -9,16 +9,18 @@ import Counter from '../../components/Counter/Counter';
 
 const Home = () => {
   return (
-    <Layout>
-      <div>
-        <Banner />
-        <About />
-        <Services />
-        <IndustryServe />
-        <Slider />
-        <Counter />
-      </div>
-    </Layout>
+    <>
+      <Layout>
+        <div>
+          <Banner />
+          <About />
+          <Services />
+          <IndustryServe />
+          <Slider />
+          <Counter />
+        </div>
+      </Layout>
+    </>
   );
 };
 

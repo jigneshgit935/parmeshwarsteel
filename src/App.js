@@ -9,12 +9,12 @@ import Fittings from './pages/Fittings';
 import Pipes from './pages/Pipes';
 import Flanges from './pages/Flanges';
 import ICFittings from './pages/BoldFastners';
-import BSPTFittings from './pages/BSPTFittings';
 import Wire from './pages/Wire';
 import BarsWires from './pages/BarsWires';
 import SteelPlates from './pages/SteelPlates';
 import AngleChannels from './pages/AngleChannels';
 import PercentageAlloys from './pages/PercentageAlloys';
+import Rods from './pages/Rods';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
         <Route path="/flanges" element={<Flanges />} />
         <Route path="/bold-fastners" element={<ICFittings />} />
         <Route path="/angle-channels" element={<AngleChannels />} />
-        <Route path="/bspt-fittings" element={<BSPTFittings />} />
+        <Route path="/rods" element={<Rods />} />
         <Route path="/bars-wires" element={<BarsWires />} />
         <Route path="/steets-plates" element={<SteelPlates />} />
         <Route path="/wires-bars" element={<Wire />} />
