@@ -14,10 +14,10 @@ const Banner = () => {
       opacity: 1,
       transition: {
         duration: 1,
-        staggerChildren: 0.1,
+        staggerChildren: 0.2,
         type: 'spring',
         stiffness: 100,
-        damping: 15, // Adjust the damping value here
+        damping: 15,
       },
     },
   };
