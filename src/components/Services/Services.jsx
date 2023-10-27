@@ -41,7 +41,7 @@ const serviceData = [
 const Services = () => {
   const variants = {
     initial: {
-      x: -500,
+      x: -200,
       y: 0,
       opacity: 0,
     },
@@ -132,7 +132,7 @@ const MultiItemCarousel = () => {
   };
   const variants = {
     initial: {
-      x: -500,
+      x: -100,
       y: 0,
       opacity: 0,
     },
