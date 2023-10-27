@@ -15,28 +15,42 @@ import SteelPlates from './pages/SteelPlates';
 import AngleChannels from './pages/AngleChannels';
 import PercentageAlloys from './pages/PercentageAlloys';
 import Rods from './pages/Rods';
+import { useEffect, useState } from 'react';
+import Preloader from './components/Preloader/Preloader';
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(true);
+    }, 100);
+  });
   return (
-    <div className="App container-width">
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Product />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/fittings" element={<Fittings />} />
-        <Route path="/pipes" element={<Pipes />} />
-        <Route path="/flanges" element={<Flanges />} />
-        <Route path="/bold-fastners" element={<ICFittings />} />
-        <Route path="/angle-channels" element={<AngleChannels />} />
-        <Route path="/rods" element={<Rods />} />
-        <Route path="/bars-wires" element={<BarsWires />} />
-        <Route path="/steets-plates" element={<SteelPlates />} />
-        <Route path="/wires-bars" element={<Wire />} />
-        <Route path="/percentage-alloys" element={<PercentageAlloys />} />
-      </Routes>
-    </div>
+    <>
+      {!loading ? (
+        <Preloader />
+      ) : (
+        <div className="App container-width">
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Product />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/fittings" element={<Fittings />} />
+            <Route path="/pipes" element={<Pipes />} />
+            <Route path="/flanges" element={<Flanges />} />
+            <Route path="/bold-fastners" element={<ICFittings />} />
+            <Route path="/angle-channels" element={<AngleChannels />} />
+            <Route path="/rods" element={<Rods />} />
+            <Route path="/bars-wires" element={<BarsWires />} />
+            <Route path="/steets-plates" element={<SteelPlates />} />
+            <Route path="/wires-bars" element={<Wire />} />
+            <Route path="/percentage-alloys" element={<PercentageAlloys />} />
+          </Routes>
+        </div>
+      )}
+    </>
   );
 }
 
