@@ -25,15 +25,15 @@ const About = () => {
   const isInView = useInView(ref, { margin: '-50px' });
   return (
     <motion.div
+      id="about"
       variants={variants}
       initial="initial"
-      //   animate="animate"
       whileInView="animate"
       ref={ref}
       animate={isInView && 'animate'}
       className="px-lg-5 px-md-4 px-3 py-5"
     >
-      <div className="py-lg-5 py-0 ">
+      <div className="py-lg-5 py-0">
         <div className="d-flex flex-wrap ">
           <motion.div
             variants={variants}

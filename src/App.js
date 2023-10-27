@@ -4,7 +4,6 @@ import Home from './pages/Home/Home';
 import Contact from './pages/Contact/Contact';
 import Product from './pages/Product/Product';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import About from './components/About/About';
 import Fittings from './pages/Fittings';
 import Pipes from './pages/Pipes';
 import Flanges from './pages/Flanges';
@@ -17,6 +16,7 @@ import PercentageAlloys from './pages/PercentageAlloys';
 import Rods from './pages/Rods';
 import { useEffect, useState } from 'react';
 import Preloader from './components/Preloader/Preloader';
+import About from './components/About/About';
 
 function App() {
   const [loading, setLoading] = useState(false);
