@@ -11,6 +11,7 @@ import ImageTen from '../../assets/img10.jpg';
 import { Table } from 'react-bootstrap';
 import Layout from '../../components/Layout/Layout';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const dataone = [
   { cities: 'Banglore' },
@@ -157,15 +158,56 @@ const productData = [
 ];
 
 const Product = () => {
+  const textVariants = {
+    initial: {
+      x: -500,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.2,
+        type: 'spring',
+        stiffness: 100,
+        damping: 15,
+      },
+    },
+  };
+  const backgroundImage = {
+    initial: {
+      x: 0,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.1,
+      },
+    },
+  };
   return (
     <Layout>
       <div className="pb-4">
-        <div
+        <motion.div
+          variants={backgroundImage}
+          initial="initial"
+          animate="animate"
           className="text-center text-white imgBgProducts"
           style={{ padding: '80px 0px' }}
         >
-          <h1 className="display-3 fw-bold">Our Products</h1>
-        </div>
+          <motion.h1
+            variants={textVariants}
+            initial="initial"
+            animate="animate"
+            className="display-3 fw-bold"
+          >
+            Our Products
+          </motion.h1>
+        </motion.div>
         <div className="mt-5">
           <div className="d-flex justify-content-lg-start widhheading justify-content-center align-items-center">
             <h1 className=" fw-bold underline-for-heading d-inline">

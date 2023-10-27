@@ -5,6 +5,7 @@ import { LiaPhoneVolumeSolid } from 'react-icons/lia';
 import { VscDebugStepInto } from 'react-icons/vsc';
 import './Contact.css';
 import Layout from '../../components/Layout/Layout';
+import { motion } from 'framer-motion';
 
 const address = [
   {
@@ -43,15 +44,54 @@ const address = [
 ];
 
 const Contact = () => {
+  const textVariants = {
+    initial: {
+      x: -500,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.2,
+        type: 'spring',
+        stiffness: 100,
+        damping: 15,
+      },
+    },
+  };
+  const backgroundImage = {
+    initial: {
+      x: 0,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.1,
+      },
+    },
+  };
   return (
     <Layout>
       <div className=" ">
-        <div
+        <motion.div
+          variants={backgroundImage}
           className="text-center text-white bgImageContact"
           style={{ padding: '80px 0px' }}
         >
-          <h1 className="display-3 fw-bold ">Contact</h1>
-        </div>
+          <motion.h1
+            variants={textVariants}
+            initial="initial"
+            animate="animate"
+            className="display-3 fw-bold "
+          >
+            Contact
+          </motion.h1>
+        </motion.div>
 
         <div className="py-5 bgimgcontacthere">
           <div className="px-lg-5 px-md-3 px-2">
