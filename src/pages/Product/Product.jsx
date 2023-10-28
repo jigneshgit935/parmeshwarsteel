@@ -1,16 +1,7 @@
 import React from 'react';
 import './Product.css';
-import ImageOne from '../../assets/img1.jpg';
-import ImageTwo from '../../assets/img2.jpg';
-import ImageThree from '../../assets/img3.jpg';
-import ImageFor from '../../assets/img4.jpg';
-import AngleChannel from '../../assets/angleMain.jpg';
-import Bars from '../../assets/bars.jpg';
-import ImageEight from '../../assets/img8.jpg';
-import ImageTen from '../../assets/img10.jpg';
-import { Table } from 'react-bootstrap';
+
 import Layout from '../../components/Layout/Layout';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import TableContent from '../../components/TableContent/TableContent';
 import ProductCard from '../../components/ProductCard/ProductCard';
@@ -33,20 +24,20 @@ const Product = () => {
       },
     },
   };
-  const backgroundImage = {
-    initial: {
-      x: 0,
-      opacity: 0,
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        staggerChildren: 0.1,
-      },
-    },
-  };
+  // const backgroundImage = {
+  //   initial: {
+  //     x: 0,
+  //     opacity: 0,
+  //   },
+  //   animate: {
+  //     x: 0,
+  //     opacity: 1,
+  //     transition: {
+  //       duration: 0.6,
+  //       staggerChildren: 0.1,
+  //     },
+  //   },
+  // };
   return (
     <Layout>
       <div className="pb-4">
