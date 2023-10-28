@@ -12,7 +12,9 @@ const Banner = () => {
     animate: {
       x: 0,
       opacity: 1,
+
       transition: {
+        delay: 0.4,
         duration: 1,
         staggerChildren: 0.2,
         type: 'spring',
@@ -30,7 +32,7 @@ const Banner = () => {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.4,
         staggerChildren: 0.1,
       },
     },
