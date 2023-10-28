@@ -1,6 +1,5 @@
 import React from 'react';
 import './Product.css';
-
 import Layout from '../../components/Layout/Layout';
 import { motion } from 'framer-motion';
 import TableContent from '../../components/TableContent/TableContent';
@@ -41,7 +40,7 @@ const Product = () => {
   return (
     <Layout>
       <div className="pb-4">
-        <div
+        <motion.div
           // variants={backgroundImage}
           // initial="initial"
           // animate="animate"
@@ -56,7 +55,7 @@ const Product = () => {
           >
             Our Products
           </motion.h1>
-        </div>
+        </motion.div>
         <div className="mt-5">
           <ProductCard />
           <TableContent />
