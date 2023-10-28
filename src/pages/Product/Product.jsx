@@ -23,27 +23,27 @@ const Product = () => {
       },
     },
   };
-  // const backgroundImage = {
-  //   initial: {
-  //     x: 0,
-  //     opacity: 0,
-  //   },
-  //   animate: {
-  //     x: 0,
-  //     opacity: 1,
-  //     transition: {
-  //       duration: 0.6,
-  //       staggerChildren: 0.1,
-  //     },
-  //   },
-  // };
+  const backgroundImage = {
+    initial: {
+      x: 0,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+        staggerChildren: 0.1,
+      },
+    },
+  };
   return (
     <Layout>
       <div className="pb-4">
         <motion.div
-          // variants={backgroundImage}
-          // initial="initial"
-          // animate="animate"
+          variants={backgroundImage}
+          initial="initial"
+          animate="animate"
           className="text-center text-white imgBgProducts"
           style={{ padding: '80px 0px' }}
         >
