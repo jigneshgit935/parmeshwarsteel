@@ -27,29 +27,29 @@ function App() {
   });
   return (
     <>
-      {/* {!loading ? (
+      {!loading ? (
         <Preloader />
-      ) : ( */}
-      <div className="App container-width">
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Product />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/fittings" element={<Fittings />} />
-          <Route path="/pipes" element={<Pipes />} />
-          <Route path="/flanges" element={<Flanges />} />
-          <Route path="/bold-fastners" element={<ICFittings />} />
-          <Route path="/angle-channels" element={<AngleChannels />} />
-          <Route path="/rods" element={<Rods />} />
-          <Route path="/bars-wires" element={<BarsWires />} />
-          <Route path="/steets-plates" element={<SteelPlates />} />
-          <Route path="/wires-bars" element={<Wire />} />
-          <Route path="/percentage-alloys" element={<PercentageAlloys />} />
-        </Routes>
-      </div>
-      {/* )} */}
+      ) : (
+        <div className="App container-width">
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Product />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/fittings" element={<Fittings />} />
+            <Route path="/pipes" element={<Pipes />} />
+            <Route path="/flanges" element={<Flanges />} />
+            <Route path="/bold-fastners" element={<ICFittings />} />
+            <Route path="/angle-channels" element={<AngleChannels />} />
+            <Route path="/rods" element={<Rods />} />
+            <Route path="/bars-wires" element={<BarsWires />} />
+            <Route path="/steets-plates" element={<SteelPlates />} />
+            <Route path="/wires-bars" element={<Wire />} />
+            <Route path="/percentage-alloys" element={<PercentageAlloys />} />
+          </Routes>
+        </div>
+      )}
     </>
   );
 }
