@@ -71,7 +71,7 @@ const Contact = () => {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1.1,
+        duration: 0.9,
         staggerChildren: 0.1,
       },
     },
