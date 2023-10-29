@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import dairyImage from '../../assets/dairyImage.jpg';
 import foodAndDairy from '../../assets/food &dairy insutry.jpeg';
@@ -14,6 +14,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import './IndustryServe.css';
+import { motion, useInView } from 'framer-motion';
 const serviceData = [
   {
     image: dairyImage,
@@ -57,34 +58,67 @@ const serviceData = [
   },
 ];
 const IndustryServe = () => {
+  const variants = {
+    initial: {
+      x: -200,
+      y: 100,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+  const ref = useRef();
+
+  const isInView = useInView(ref, { margin: '-50px' });
   return (
-    <div className="py-5">
-      <div className="px-lg-5 px-md-3 px-2">
-        <div className="d-flex justify-content-lg-start justify-content-center">
-          <h1 className="fw-bold text-center underline-for-heading d-inline">
+    <motion.div
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+      ref={ref}
+      animate={isInView && 'animate'}
+      className="py-5"
+    >
+      <motion.div className="px-lg-5 px-md-3 px-2">
+        <motion.div className="d-flex justify-content-lg-start justify-content-center">
+          <motion.h1
+            variants={variants}
+            className="fw-bold text-center underline-for-heading d-inline"
+          >
             Industries we serve
-          </h1>
-        </div>
-        <div className="d-flex flex-wrap mt-lg-3 mt-2">
-          <div className="px-2 col-lg-4 col-12 d-flex  flex-column justify-content-between text-lg-start text-center">
-            <h1 className="" style={{ fontWeight: '900' }}>
+          </motion.h1>
+        </motion.div>
+        <motion.div className="d-flex flex-wrap mt-lg-3 mt-2">
+          <motion.div className="px-2 col-lg-4 col-12 d-flex  flex-column justify-content-between text-lg-start text-center">
+            <motion.h1
+              variants={variants}
+              className=""
+              style={{ fontWeight: '900' }}
+            >
               Industries our products are used
-            </h1>
-            <p className="mt-3 ">
+            </motion.h1>
+            <motion.p variants={variants} className="mt-3 ">
               We have serve various of industries in India, as well as over
               world wide recently we have supplied large quantity of{' '}
               <b>Pipe Fittings, Flanges</b> to Sugar Mills, Pharmacutical
               Industry and Water Treatment Plant
-            </p>
-          </div>
-          <div className="col-lg-8 col-12 ">
-            <div>
+            </motion.p>
+          </motion.div>
+          <motion.div className="col-lg-8 col-12 ">
+            <motion.div variants={variants}>
               <MultiItemCarousel />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 
@@ -135,11 +169,27 @@ const MultiItemCarousel = () => {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
-
+  const variants = {
+    initial: {
+      x: -100,
+      y: 0,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  };
   return (
     <Slider {...settings}>
       {serviceData.map((item, index) => (
-        <div
+        <motion.div
+          variants={variants}
           key={index}
           className="px-2 d-flex justify-content-center  postionArrowIndustries"
         >
@@ -163,7 +213,7 @@ const MultiItemCarousel = () => {
             </div>
             <h4 className="fw-bold">{item.titles}</h4>
           </div>
-        </div>
+        </motion.div>
       ))}
     </Slider>
   );

@@ -170,7 +170,7 @@ const TableContent = () => {
           </h6>
         </motion.div>
         <Table bordered responsive="md" style={{ border: '1px solid #000' }}>
-          <motion.tbody variants={textVariants} className="text-center">
+          <tbody variants={textVariants} className="text-center">
             <tr>
               {dataone.map((item) => (
                 <td>{item.cities}</td>
@@ -226,7 +226,7 @@ const TableContent = () => {
                 <td>{item.cities}</td>
               ))}
             </tr>
-          </motion.tbody>
+          </tbody>
         </Table>
       </motion.div>
     </motion.div>

@@ -63,7 +63,6 @@ const Services = () => {
     <motion.div
       variants={variants}
       initial="initial"
-      //   animate="animate"
       whileInView="animate"
       ref={ref}
       animate={isInView && 'animate'}

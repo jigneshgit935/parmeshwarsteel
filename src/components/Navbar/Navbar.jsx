@@ -35,8 +35,11 @@ const Navbar = () => {
 
   return (
     <>
-      <header className={`borderMain py-2 ${show}`}>
-        <div className="px-lg-5 px-3 navbar d-flex justify-content-between">
+      <header className={`borderMain ${show}`}>
+        <div
+          className="px-lg-5 px-3 navbar d-flex justify-content-between m-auto"
+          style={{ height: '100px' }}
+        >
           <div className="d-flex">
             <Link
               style={{ textDecoration: 'none' }}
@@ -46,55 +49,75 @@ const Navbar = () => {
               <img src={Logo} alt="" className="img-fluid navbarlogoherer" />
             </Link>
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu my-auto'}>
-            <div className="menu-icon" onClick={handleClick} aria-hidden="true">
-              {click ? (
-                <img
-                  src={cross}
-                  className="img-fluid menu-icons "
-                  style={{ position: 'absolute', top: '30px', right: '40px' }}
-                  alt="menu-icon"
-                />
-              ) : (
-                <img
-                  src={cross}
-                  className="img-fluid menu-icons "
-                  style={{ position: 'absolute', top: '30px', right: '40px' }}
-                  alt="menu-icon"
-                />
-              )}
-            </div>
-
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/products"
-                className="nav-links"
-                onClick={closeMobileMenu}
+          <div className="d-flex">
+            <ul
+              className={
+                click ? 'nav-menu active my-auto' : 'nav-menu my-auto '
+              }
+            >
+              <div
+                className="menu-icon border"
+                onClick={handleClick}
+                aria-hidden="true"
               >
-                Products
-              </Link>
-            </li>
+                {click ? (
+                  <img
+                    src={cross}
+                    className="img-fluid menu-icons "
+                    style={{ position: 'absolute', top: '30px', right: '40px' }}
+                    alt="menu-icon"
+                  />
+                ) : (
+                  <img
+                    src={cross}
+                    className="img-fluid menu-icons "
+                    style={{ position: 'absolute', top: '30px', right: '40px' }}
+                    alt="menu-icon"
+                  />
+                )}
+              </div>
 
-            <li className="nav-item">
-              <Link
-                to="/contact"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-          <div className="">
-            <Link to="/contact">
-              <button className="buttonDesign me-auto">Quote</button>
-            </Link>
+              <li className="nav-item">
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/products"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Products
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link
+                  to="/contact"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Contact
+                </Link>
+              </li>
+              <li className="nav-item d-lg-none">
+                <Link
+                  to="/contact"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Qoute
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/contact" className="nav-links">
+                  <button className="buttonDesign me-auto">Quote</button>
+                </Link>
+              </li>
+            </ul>
           </div>
+
           <div className="menu-icon" onClick={handleClick} aria-hidden="true">
             {click ? (
               <img

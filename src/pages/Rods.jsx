@@ -1,11 +1,13 @@
 import React from 'react';
 import ProductsDetails from '../components/ProductsDetails/ProductsDetails';
+import RodsImage from '../assets/steelRodes.jpg';
 
 const Rods = () => {
   const post = {
     title: '',
     metaDescription: '',
     h1: 'Rods',
+    imageSection: RodsImage,
     aboutSection: {
       paragraph1:
         'Rods are used to connect pipes with each other, to valves, to fittings, and to specialty items such as strainers and pressure vessels. A cover plate can be connected to create a blind flange. Flanges are joined by bolting, and sealing is often completed with the use of gaskets or other methods.',

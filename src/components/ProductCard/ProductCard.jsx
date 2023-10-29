@@ -7,6 +7,8 @@ import AngleChannel from '../../assets/angleMain.jpg';
 import Bars from '../../assets/bars.jpg';
 import ImageEight from '../../assets/img8.jpg';
 import ImageTen from '../../assets/img10.jpg';
+import RodsProduct from '../../assets/steelrods.jpg';
+
 import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
 
@@ -54,7 +56,7 @@ const productData = [
   {
     link: '/rods',
     name: 'Rods',
-    img: ImageTen,
+    img: RodsProduct,
   },
 ];
 const ProductCardHeader = 'StockList and Suppliers of';

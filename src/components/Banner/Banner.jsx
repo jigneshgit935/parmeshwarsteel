@@ -12,7 +12,6 @@ const Banner = () => {
     animate: {
       x: 0,
       opacity: 1,
-
       transition: {
         duration: 1,
         staggerChildren: 0.2,
@@ -39,7 +38,7 @@ const Banner = () => {
   return (
     <>
       <div className="">
-        <div>
+        <motion.div>
           <motion.div
             variants={backgroundImage}
             initial="initial"
@@ -96,7 +95,7 @@ const Banner = () => {
               </Link>
             </motion.div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

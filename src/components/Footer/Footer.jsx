@@ -79,8 +79,17 @@ const Footer = () => {
                 <Link to="/bold-fastners" className="link-tagfooter">
                   <li className="mt-lg-3 mt-md-3 mt-3">Bold / Fastners</li>
                 </Link>
-                <Link to="/steets-plates" className="link-tagfooter">
+                <Link to="/angle-channels" className="link-tagfooter">
                   <li className="mt-lg-3 mt-md-3 mt-3">Angle / Channels</li>
+                </Link>
+                <Link to="/steets-plates" className="link-tagfooter">
+                  <li className="mt-lg-3 mt-md-3 mt-3">Steets / PLates</li>
+                </Link>
+                <Link to="/wires-bars" className="link-tagfooter">
+                  <li className="mt-lg-3 mt-md-3 mt-3">Bars / Wires</li>
+                </Link>
+                <Link to="/percentage-alloys" className="link-tagfooter">
+                  <li className="mt-lg-3 mt-md-3 mt-3">Percentage Alloys</li>
                 </Link>
               </ul>
             </div>
