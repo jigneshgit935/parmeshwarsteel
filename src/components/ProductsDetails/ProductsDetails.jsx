@@ -1019,6 +1019,155 @@ const ProductsDetails = (props) => {
 
                       <td>47.6</td>
                     </tr>
+
+                    <tr>
+                      <th rowSpan={7}>6</th>
+                    </tr>
+
+                    <tr>
+                      <td>A</td>
+
+                      <td>11</td>
+                      <td>279</td>
+
+                      <td>12 1/2</td>
+                      <td>317.5</td>
+
+                      <td>12 1/2</td>
+                      <td>317.5</td>
+
+                      <td>14</td>
+                      <td>355.6</td>
+
+                      <td>15</td>
+                      <td>381</td>
+
+                      <td>15 1/2</td>
+                      <td>394</td>
+                      <td>19</td>
+
+                      <td>483</td>
+                    </tr>
+                    <tr>
+                      <td>b</td>
+
+                      <td>1</td>
+                      <td>25.4</td>
+
+                      <td>17/16</td>
+                      <td>36.5</td>
+
+                      <td>1 5/8</td>
+                      <td>41.3</td>
+
+                      <td>1 7/8</td>
+                      <td>47.6</td>
+
+                      <td>2 3/16</td>
+                      <td>55.6</td>
+
+                      <td>3 1/4</td>
+                      <td>82.6</td>
+                      <td>4 1/4</td>
+
+                      <td>108</td>
+                    </tr>
+                    <tr>
+                      <td>D2</td>
+
+                      <td>8 1/2</td>
+                      <td>216</td>
+
+                      <td>8 1/2</td>
+                      <td>215.9</td>
+
+                      <td>8 1/2</td>
+                      <td>215.9</td>
+
+                      <td>8 1/2</td>
+                      <td>215.9</td>
+
+                      <td>8 1/2</td>
+                      <td>215.9</td>
+
+                      <td>8 1/2</td>
+                      <td>215.9</td>
+                      <td>8 1/2</td>
+
+                      <td>216</td>
+                    </tr>
+                    <tr>
+                      <td>D1</td>
+
+                      <td>9 1/2</td>
+                      <td>241</td>
+
+                      <td>10 5/8</td>
+                      <td>269.9</td>
+
+                      <td>10 5/8</td>
+                      <td>269.9</td>
+
+                      <td>11 1/2</td>
+                      <td>292.1</td>
+
+                      <td>12 1/2</td>
+                      <td>318</td>
+
+                      <td>12 1/2</td>
+                      <td>318</td>
+                      <td>14 1/2</td>
+
+                      <td>368</td>
+                    </tr>
+                    <tr>
+                      <td>n</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>12</td>
+                      <td>12</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>d</td>
+
+                      <td>8-Jul</td>
+                      <td>22.2</td>
+
+                      <td>8-Jul</td>
+                      <td>22.2</td>
+
+                      <td>1</td>
+                      <td>25.4</td>
+
+                      <td>1 1/8</td>
+                      <td>28.6</td>
+
+                      <td>1 1/4</td>
+                      <td>31.8</td>
+
+                      <td>1 1/2</td>
+                      <td>38.1</td>
+                      <td>2 1/8</td>
+
+                      <td>54</td>
+                    </tr>
                   </tbody>
                 </Table>
               </div>
