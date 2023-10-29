@@ -76,6 +76,23 @@ const Contact = () => {
       },
     },
   };
+
+  const Cardvariants = {
+    initial: {
+      x: -200,
+      y: 100,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.1,
+      },
+    },
+  };
   return (
     <Layout>
       <div className=" ">
@@ -103,24 +120,31 @@ const Contact = () => {
           animate="animate"
         >
           <div className="px-lg-5 px-md-3 px-2">
-            <div className="d-flex flex-wrap ">
+            <motion.div
+              variants={Cardvariants}
+              initial="initial"
+              whileInView="animate"
+              className="d-flex flex-wrap "
+            >
               {address.map((item, index) => {
                 return (
-                  <div className="col-lg-4 col-md-6 col-12 my-lg-4 my-3 px-lg-2 px-md-2 px-0">
-                    <div className="d-flex justify-content-center">
-                      <div className="contactContainer shadow text-center py-3 px-5  d-flex flex-column justify-content-evenly align-items-center">
-                        <span className="mt-3">{item.icons}</span>
-                        <span className="">{item.gstin}</span>
-                        <h3 className="">{item.personInfo}</h3>
-                        <span className="">{item.namesperson}</span>
-                        <h3 className="mt-1">{item.name}</h3>
-                        <p className="">{item.subpara}</p>
-                      </div>
-                    </div>
-                  </div>
+                  <motion.div className="col-lg-4 col-md-6 col-12 my-lg-4 my-3 px-lg-2 px-md-2 px-0">
+                    <motion.div className="d-flex justify-content-center">
+                      <motion.div className="contactContainer shadow text-center py-3 px-5  d-flex flex-column justify-content-evenly align-items-center">
+                        <motion.span className="mt-3">{item.icons}</motion.span>
+                        <motion.span className="">{item.gstin}</motion.span>
+                        <motion.h3 className="">{item.personInfo}</motion.h3>
+                        <motion.span className="">
+                          {item.namesperson}
+                        </motion.span>
+                        <motion.h3 className="mt-1">{item.name}</motion.h3>
+                        <motion.p className="">{item.subpara}</motion.p>
+                      </motion.div>
+                    </motion.div>
+                  </motion.div>
                 );
               })}
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>
