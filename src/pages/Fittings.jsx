@@ -8,16 +8,25 @@ const Fittings = () => {
     metaDescription: '',
     imageSection: FittingsImage,
     h1: 'Fittings',
+    heading1Main:
+      'Fittings Manufacturer & Supplier in India - Parmeshwar Steel Center',
+
     aboutSection: {
       paragraph1:
-        'Metal fittings provide many benefits when used in pneumatic industrial applications. Depending on the metal materials used, Polyconn’s pneumatic fittings can be corrosion-resistant and durable. As metal fittings display high strength compared to other materials, they are well-suited to applications requiring an ability to restrict movement and stand firm',
+        'Parmeshwar steel center is a prominent Forged Fittings Manufacturer in India, offering superior quality products with an unwavering commitment to excellence. Our state of the art infrastructure enables us to produce and supply Forged Fittings consistently. With experienced engineers, customer centric operations, we are one of the largest Forged Fittings Manufacturer in the industry. We also offer custom-size Forged Fittings to meet our customers industrial needs at a reasonable price.',
     },
 
     productTables: {
       title: 'Types of Fittings',
-      title1: 'Metal Available for Fittings',
+      pointHead:
+        'Forged Fittings Manufacturer, Elbow Forged Fittings Supplier, Tee Forged Fittings Manufacturer in India',
+      pointPara:
+        'We provide a vast variety of forged fittings. Our fittings are manufactured from top components and are customized to your specific needs. We provide many different kinds of forged fittings, such as:',
+      point1Para:
+        'While purchasing forged fittings, you need to be aware of a few important requirements, sizes, and grades.',
+      point1Head: 'Forged Fittings Grades & Specifications:',
       heading: [{ Srno: 'Sr.no', title: 'Fittings' }],
-      heading1: [{ Srno: 'Sr.no', title: 'Metal' }],
+      heading1: [{ Srno: 'Forged Fittings', title: 'Specifications' }],
       points: [
         { id: '1', points: 'IC Fittings' },
         { id: '2', points: 'Dairy Fittings' },
@@ -30,20 +39,14 @@ const Fittings = () => {
         { id: '9', points: 'Hydrolic Fittings' },
       ],
       points1: [
-        { id: '1', points: 'MS' },
-        { id: '2', points: 'Copper' },
-        { id: '3', points: 'Steel' },
-        { id: '4', points: 'Bronze' },
-        { id: '5', points: 'Stainless-Steel' },
-        { id: '6', points: 'Alluminium' },
-        { id: '7', points: 'Nickel' },
-        { id: '8', points: 'Monel' },
-        { id: '9', points: 'Gunmetel' },
-        { id: '10', points: 'Brass' },
-        { id: '11', points: 'Non-Ferrous Allow' },
-        { id: '12', points: 'Ferrous Allow' },
+        { id: 'Type of Forged Fitting', points: 'IC Fittings' },
+        { id: 'Size', points: '½ NB to 48NB.' },
+        { id: 'Type', points: 'Seamless / ERW / Welded / Fabricated.' },
       ],
     },
+    ifTrue: 'true',
+    tablefittingIfTrue: 'true',
+    tablefittingIfTrueExtra: 'true',
   };
   return <ProductsDetails {...post} />;
 };
