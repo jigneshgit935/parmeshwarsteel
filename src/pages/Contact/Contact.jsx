@@ -81,6 +81,8 @@ const Contact = () => {
       <div className=" ">
         <motion.div
           variants={backgroundImage}
+          initial="initial"
+          animate="animate"
           className="text-center text-white bgImageContact"
           style={{ padding: '80px 0px' }}
         >
