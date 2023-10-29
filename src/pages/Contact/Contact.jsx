@@ -81,8 +81,6 @@ const Contact = () => {
       <div className=" ">
         <motion.div
           variants={backgroundImage}
-          initial="initial"
-          animate="animate"
           className="text-center text-white bgImageContact"
           style={{ padding: '80px 0px' }}
         >
@@ -96,7 +94,12 @@ const Contact = () => {
           </motion.h1>
         </motion.div>
 
-        <div className="py-5 bgimgcontacthere">
+        <motion.div
+          className="py-5 bgimgcontacthere"
+          variants={backgroundImage}
+          initial="initial"
+          animate="animate"
+        >
           <div className="px-lg-5 px-md-3 px-2">
             <div className="d-flex flex-wrap ">
               {address.map((item, index) => {
@@ -117,7 +120,7 @@ const Contact = () => {
               })}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Layout>
   );
