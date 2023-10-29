@@ -9,7 +9,7 @@ const ProductsDetails = (props) => {
   console.log(props);
   return (
     <Layout>
-      <div className="py-3 px-3 ">
+      <div className="py-3 px-lg-3 px-2 border">
         <div className="">
           <Link to="/products">
             <button
@@ -50,15 +50,14 @@ const ProductsDetails = (props) => {
             {!props.heading1Main ? (
               ''
             ) : (
-              <h2 className="fw-bold py-2">{props.heading1Main}</h2>
+              <h2 className="fw-bold py-2 text-lg-start text-center">
+                {props.heading1Main}
+              </h2>
             )}
 
             {props.aboutSection.length !== 0 ? (
               <>
-                <p
-                  className="text-center"
-                  style={{ fontSize: '20px', textAlign: 'justify' }}
-                >
+                <p className="text-center paraSize">
                   {props.aboutSection.paragraph1}
                 </p>
               </>
@@ -70,7 +69,7 @@ const ProductsDetails = (props) => {
             ''
           ) : (
             <div className="my-4">
-              <div className="px-lg-5 px-3">
+              <div className="px-lg-5 px-0">
                 <>
                   {!props.productTables.pointHead ? (
                     ''
@@ -80,10 +79,7 @@ const ProductsDetails = (props) => {
                   {!props.productTables.pointPara ? (
                     ''
                   ) : (
-                    <p
-                      style={{ fontSize: '19px', textAlign: 'justify' }}
-                      className=""
-                    >
+                    <p className="paraSizeEx">
                       {props.productTables.pointPara}
                     </p>
                   )}
@@ -120,7 +116,7 @@ const ProductsDetails = (props) => {
             ''
           ) : (
             <div className="my-4">
-              <div className="px-lg-5 px-3">
+              <div className="px-lg-5 px-0">
                 {!props.productTables.title1 ? (
                   ''
                 ) : (
@@ -139,10 +135,7 @@ const ProductsDetails = (props) => {
                   {!props.productTables.point1Para ? (
                     ''
                   ) : (
-                    <p
-                      style={{ fontSize: '19px', textAlign: 'justify' }}
-                      className=""
-                    >
+                    <p className="paraSizeEx">
                       {props.productTables.point1Para}
                     </p>
                   )}
@@ -172,7 +165,7 @@ const ProductsDetails = (props) => {
             </div>
           )}
           {props.ifTrue === 'true' ? (
-            <div className="px-lg-5 px-3 my-4">
+            <div className="px-lg-5 px-0">
               <Table
                 bordered
                 responsive="md"
@@ -264,9 +257,9 @@ const ProductsDetails = (props) => {
           )}
           {props.tablefittingIfTrue === 'true' ? (
             <div className="my-4">
-              <div className="px-lg-5 px-3">
+              <div className="px-lg-5 px-0">
                 <h3>Stainless Steel Forged Fittings Mechanical Properties</h3>
-                <p style={{ fontSize: '19px', textAlign: 'justify' }}>
+                <p className="paraSizeEx">
                   The mechanical properties of the stainless steel forged
                   fittings are displayed in the following table:
                 </p>
@@ -356,9 +349,9 @@ const ProductsDetails = (props) => {
 
           {props.tablefittingIfTrueExtra === 'true' ? (
             <div className="my-4">
-              <div className="px-lg-5 px-3">
+              <div className="px-lg-5 px-0">
                 <h3>Stainless Steel Forged Fittings Chemical Composition</h3>
-                <p style={{ fontSize: '19px', textAlign: 'justify' }}>
+                <p className="paraSizeEx">
                   The chemical reactivity of stainless steel Forged Fittings is
                   essential since it impacts the fitting’s ability to resist
                   corrosion and other characteristics.
