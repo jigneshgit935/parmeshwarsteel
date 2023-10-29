@@ -54,11 +54,11 @@ const Contact = () => {
       opacity: 1,
       transition: {
         duration: 1,
-        delay: 0.6,
+        delay: 0.5,
         staggerChildren: 0.2,
         type: 'spring',
         stiffness: 100,
-        damping: 15,
+        damping: 10,
       },
     },
   };
@@ -71,7 +71,7 @@ const Contact = () => {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 0.8,
+        duration: 1.1,
         staggerChildren: 0.1,
       },
     },

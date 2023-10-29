@@ -42,7 +42,7 @@ const Services = () => {
   const variants = {
     initial: {
       x: -200,
-      y: 0,
+      y: 100,
       opacity: 0,
     },
     animate: {
