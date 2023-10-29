@@ -54,7 +54,7 @@ const Contact = () => {
       opacity: 1,
       transition: {
         duration: 1,
-        delay: 0.5,
+        delay: 0.6,
         staggerChildren: 0.2,
         type: 'spring',
         stiffness: 100,
@@ -71,7 +71,7 @@ const Contact = () => {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.8,
         staggerChildren: 0.1,
       },
     },
