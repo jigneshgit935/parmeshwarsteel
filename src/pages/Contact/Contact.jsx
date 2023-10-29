@@ -54,6 +54,7 @@ const Contact = () => {
       opacity: 1,
       transition: {
         duration: 1,
+        delay: 0.5,
         staggerChildren: 0.2,
         type: 'spring',
         stiffness: 100,
@@ -80,6 +81,8 @@ const Contact = () => {
       <div className=" ">
         <motion.div
           variants={backgroundImage}
+          initial="initial"
+          animate="animate"
           className="text-center text-white bgImageContact"
           style={{ padding: '80px 0px' }}
         >
