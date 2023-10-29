@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Table } from 'react-bootstrap';
+import { motion, useInView } from 'framer-motion';
 
 const dataone = [
   { cities: 'Banglore' },
@@ -104,23 +105,72 @@ const tableContentPara =
 const headerTagForCities = 'We supply our products in below cities in India';
 const headerforManufacturer = ' Manufactures, Suppliers of our Products';
 const TableContent = () => {
+  const textVariants = {
+    initial: {
+      x: -500,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.2,
+        type: 'spring',
+        stiffness: 80,
+        damping: 20,
+      },
+    },
+  };
+
+  const variants = {
+    initial: {
+      x: -200,
+      y: 100,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+  const ref = useRef();
+
+  const isInView = useInView(ref, { margin: '-50px' });
   return (
-    <div>
-      <h3 className="pb-3 text-center paddingSupplirePara">
+    <motion.div
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+      ref={ref}
+      animate={isInView && 'animate'}
+    >
+      <motion.h3
+        variants={textVariants}
+        initial="initial"
+        animate="animate"
+        className="pb-3 text-center paddingSupplirePara"
+      >
         {tableContentPara}
-      </h3>
-      <div className="px-lg-5 px-3">
-        <div className="my-3">
-          <h4 className="">{headerTagForCities}</h4>
-        </div>
-        {/* <h4>We supply our products in below cities in India</h4> */}
-        <div className="py-2 bg-primary">
+      </motion.h3>
+      <motion.div className="px-lg-5 px-3">
+        <motion.div className="my-3">
+          <motion.h4 variants={textVariants} className="">
+            {headerTagForCities}
+          </motion.h4>
+        </motion.div>
+        <motion.div className="py-2 bg-primary">
           <h6 className="text-white my-auto text-center">
             {headerforManufacturer}
           </h6>
-        </div>
+        </motion.div>
         <Table bordered responsive="md" style={{ border: '1px solid #000' }}>
-          <tbody className="text-center">
+          <motion.tbody variants={textVariants} className="text-center">
             <tr>
               {dataone.map((item) => (
                 <td>{item.cities}</td>
@@ -176,10 +226,10 @@ const TableContent = () => {
                 <td>{item.cities}</td>
               ))}
             </tr>
-          </tbody>
+          </motion.tbody>
         </Table>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

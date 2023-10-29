@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import ImageOne from '../../assets/img1.jpg';
 import ImageTwo from '../../assets/img2.jpg';
 import ImageThree from '../../assets/img3.jpg';
@@ -8,6 +8,7 @@ import Bars from '../../assets/bars.jpg';
 import ImageEight from '../../assets/img8.jpg';
 import ImageTen from '../../assets/img10.jpg';
 import { Link } from 'react-router-dom';
+import { motion, useInView } from 'framer-motion';
 
 const productData = [
   {
@@ -58,24 +59,71 @@ const productData = [
 ];
 const ProductCardHeader = 'StockList and Suppliers of';
 const ProductCard = () => {
+  const textVariants = {
+    initial: {
+      x: -500,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 0.5,
+        staggerChildren: 0.2,
+        type: 'spring',
+        stiffness: 100,
+        damping: 14,
+      },
+    },
+  };
+  const variants = {
+    initial: {
+      x: -200,
+      y: 100,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+  const ref = useRef();
+
+  const isInView = useInView(ref, { margin: '-50px' });
   return (
-    <div>
-      <div className="d-flex justify-content-lg-start widhheading justify-content-center align-items-center">
-        <h1 className=" fw-bold underline-for-heading d-inline">
+    <motion.div>
+      <motion.div className="d-flex justify-content-lg-start widhheading justify-content-center align-items-center">
+        <motion.h1
+          variants={textVariants}
+          initial="initial"
+          animate="animate"
+          className=" fw-bold underline-for-heading d-inline"
+        >
           {ProductCardHeader}
-        </h1>
-      </div>
-      <div className="py-3 grid-container">
+        </motion.h1>
+      </motion.div>
+      <motion.div className="py-3 grid-container">
         {productData.map((item, index) => {
           return (
-            <div
+            <motion.div
+              variants={variants}
+              initial="initial"
+              whileInView="animate"
+              ref={ref}
+              animate={isInView && 'animate'}
               key={index}
               className="grid-item shadow "
               style={{ backgroundColor: '#Fafafa' }}
             >
-              <div className="">
+              <motion.div className="">
                 <img src={item.img} alt="product-img" className="imgWidth " />
-              </div>
+              </motion.div>
               <h1 className="mt-lg-2 text-capitalize mt-4">{item.name}</h1>
               <Link to={item.link}>
                 <button
@@ -85,11 +133,11 @@ const ProductCard = () => {
                   Learn More
                 </button>
               </Link>
-            </div>
+            </motion.div>
           );
         })}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
