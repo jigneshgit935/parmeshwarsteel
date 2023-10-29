@@ -58,7 +58,7 @@ const Contact = () => {
         staggerChildren: 0.2,
         type: 'spring',
         stiffness: 100,
-        damping: 10,
+        damping: 14,
       },
     },
   };
