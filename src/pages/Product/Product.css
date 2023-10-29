@@ -82,9 +82,11 @@
 }
 
 .imgBgProducts {
-  background-image: url(../../assets/productbackground.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(../../assets/productbackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all ease-in-out 0.8s;
 }
 
 .underline-for-heading::after {

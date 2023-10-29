@@ -17,6 +17,7 @@
     url(../../assets/contactboximg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all ease-in-out 0.8s;
 }
 
 @media (min-width: 992px) and (max-width: 1060px) {
