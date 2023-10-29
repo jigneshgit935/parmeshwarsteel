@@ -164,6 +164,7 @@ const ProductsDetails = (props) => {
               </div>
             </div>
           )}
+
           {props.ifTrue === 'true' ? (
             <div className="px-lg-5 px-0">
               <Table
@@ -287,7 +288,6 @@ const ProductsDetails = (props) => {
                     </tr>
 
                     <tr>
-                      {/* <td>304*</td> */}
                       <th>(KSI) min</th>
                       <th>(KSI) min</th>
                       <th>min</th>
@@ -347,6 +347,687 @@ const ProductsDetails = (props) => {
             ''
           )}
 
+          {/* Flanges */}
+          {props.ifFlangesTrue === 'true' ? (
+            <div className="my-4">
+              <div className="px-lg-5 px-0">
+                <h3>Flanges Grades & Specifications:</h3>
+                <p className="paraSizeEx">
+                  For the needs of any project, these flanges are available in a
+                  range of grades and standards. In order for you to purchase
+                  flanges with assurance, we have listed the various grades and
+                  specifications in this chart.
+                </p>
+
+                <Table
+                  bordered
+                  responsive="md"
+                  style={{ border: '1px solid #000' }}
+                >
+                  <tbody className="text-center">
+                    <tr>
+                      <th className="table-th-width">DN</th>
+                      <th rowSpan={2}>Dimension</th>
+                      <th rowSpan={2} colSpan={14}>
+                        ANSI B16.5 Flange Dimensional Sizes 3 to 10 inches Table
+                        Chart
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>(inch)</th>
+                    </tr>
+                    <tr>
+                      <td colSpan={2}>125 lbs</td>
+                      <td rowSpan={2} colSpan={2}>
+                        300 lbs
+                      </td>
+                      <td rowSpan={2} colSpan={2}>
+                        400 lbs
+                      </td>
+                      <td rowSpan={2} colSpan={2}>
+                        600 lbs
+                      </td>
+                      <td rowSpan={2} colSpan={2}>
+                        900 lbs
+                      </td>
+                      <td rowSpan={2} colSpan={2}>
+                        1500 lbs
+                      </td>
+                      <td rowSpan={2} colSpan={4}>
+                        2500 lbs
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colSpan={2}>125 lbs</td>
+                    </tr>
+                    <tr>
+                      <td>inch</td>
+                      <td>mm</td>
+                      <td>inch</td>
+                      <td>mm</td>
+                      <td>inch</td>
+                      <td>mm</td>
+                      <td>inch</td>
+                      <td>mm</td>
+                      <td>inch</td>
+                      <td>mm</td>
+                      <td>inch</td>
+                      <td>mm</td>
+                      <td colSpan={3}>inch</td>
+                      <td>mm</td>
+                    </tr>
+
+                    <tr>
+                      <th rowSpan={7}>3</th>
+                    </tr>
+                    <tr>
+                      <td>a</td>
+                      <td>7 1/2</td>
+                      <td>190.5</td>
+
+                      <td>81/4</td>
+                      <td>209.6</td>
+
+                      <td>81/4</td>
+                      <td>209.6</td>
+
+                      <td>8 1/4</td>
+                      <td>209.6</td>
+
+                      <td>9 1/2</td>
+                      <td>241</td>
+
+                      <td>10 1/2</td>
+                      <td>267</td>
+                      <td>12</td>
+
+                      <td>305</td>
+                    </tr>
+                    <tr>
+                      <td>b</td>
+
+                      <td>15/16</td>
+                      <td>23.8</td>
+
+                      <td>1 1/8</td>
+                      <td>28.6</td>
+
+                      <td>4-Nov</td>
+                      <td>31.8</td>
+
+                      <td>1 1/4</td>
+                      <td>31.8</td>
+
+                      <td>1 1/2</td>
+                      <td>38.1</td>
+
+                      <td>1 7/8</td>
+                      <td>47.6</td>
+                      <td>2 5/8</td>
+
+                      <td>66.7</td>
+                    </tr>
+                    <tr>
+                      <td>D2</td>
+
+                      <td>5</td>
+                      <td>127</td>
+
+                      <td>5</td>
+                      <td>127</td>
+
+                      <td>5</td>
+                      <td>127</td>
+
+                      <td>5</td>
+                      <td>127</td>
+
+                      <td>5</td>
+                      <td>127</td>
+
+                      <td>5</td>
+                      <td>127</td>
+                      <td>5</td>
+
+                      <td>127</td>
+                    </tr>
+                    <tr>
+                      <td>D1</td>
+
+                      <td>6</td>
+                      <td>152.4</td>
+
+                      <td>6 5/8</td>
+                      <td>168.3</td>
+
+                      <td>168.3</td>
+                      <td>127</td>
+
+                      <td>6 5/8</td>
+                      <td>168.3</td>
+
+                      <td>71/2</td>
+                      <td>190.5</td>
+
+                      <td>8</td>
+                      <td>203</td>
+                      <td>9</td>
+
+                      <td>228.6</td>
+                    </tr>
+
+                    <tr>
+                      <td>n</td>
+
+                      <td>4</td>
+                      <td>4</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                    </tr>
+
+                    <tr>
+                      <td>d</td>
+
+                      <td>4-Mar</td>
+                      <td>4-Mar</td>
+
+                      <td>8-Jul</td>
+                      <td>22.2</td>
+
+                      <td>8-Jul</td>
+                      <td>22.2</td>
+
+                      <td>8-Jul</td>
+                      <td>22.2</td>
+
+                      <td>1</td>
+                      <td>25.4</td>
+
+                      <td>1 1/4</td>
+                      <td>31.8</td>
+                      <td>1 3/8</td>
+
+                      <td>34.9</td>
+                    </tr>
+
+                    <tr>
+                      <th rowSpan={7}>3 1/2</th>
+                    </tr>
+                    <tr>
+                      <td>A</td>
+
+                      <td>8 1/2</td>
+                      <td>215.9</td>
+
+                      <td>9</td>
+                      <td>228.6</td>
+
+                      <td>9</td>
+                      <td>228.6</td>
+
+                      <td>9</td>
+                      <td>228.6</td>
+
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>b</td>
+
+                      <td>15/16</td>
+                      <td>23.8</td>
+
+                      <td>13/16</td>
+                      <td>30.2</td>
+
+                      <td>13/8</td>
+                      <td>34.9</td>
+
+                      <td>13/8</td>
+                      <td>34.9</td>
+
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>D2</td>
+
+                      <td>5 1/2</td>
+                      <td>139.7</td>
+
+                      <td>2-May</td>
+                      <td>139.7</td>
+
+                      <td>5 1/2</td>
+                      <td>139.7</td>
+
+                      <td>5 1/2</td>
+                      <td>139.7</td>
+
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>D1</td>
+
+                      <td>7</td>
+                      <td>177.8</td>
+
+                      <td>7 1/4</td>
+                      <td>184.2</td>
+
+                      <td>7 1/4</td>
+                      <td>184.2</td>
+
+                      <td>7 1/4</td>
+                      <td>184.2</td>
+
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>n</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>d</td>
+
+                      <td>4-Mar</td>
+                      <td>19</td>
+
+                      <td>8-Jul</td>
+                      <td>22.2</td>
+
+                      <td>1</td>
+                      <td>25.4</td>
+
+                      <td>1</td>
+                      <td>25.4</td>
+
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <th rowSpan={7}>4</th>
+                    </tr>
+
+                    <tr>
+                      <td>A</td>
+
+                      <td>9</td>
+                      <td>228.6</td>
+
+                      <td>10</td>
+                      <td>254</td>
+
+                      <td>10</td>
+                      <td>254</td>
+
+                      <td>10 3/4</td>
+                      <td>273</td>
+
+                      <td>11 1/2</td>
+                      <td>292</td>
+
+                      <td>12 1/4</td>
+                      <td>311</td>
+                      <td>14</td>
+
+                      <td>356</td>
+                    </tr>
+
+                    <tr>
+                      <td>b</td>
+
+                      <td>15/16</td>
+                      <td>23.8</td>
+
+                      <td>1 1/4</td>
+                      <td>31.7</td>
+
+                      <td>1 3/8</td>
+                      <td>34.9</td>
+
+                      <td>1 1/2</td>
+                      <td>38.1</td>
+
+                      <td>1 3/4</td>
+                      <td>44.4</td>
+
+                      <td>2 1/8</td>
+                      <td>54</td>
+                      <td>3</td>
+
+                      <td>76.2</td>
+                    </tr>
+
+                    <tr>
+                      <td>D2</td>
+
+                      <td>6 3/16</td>
+                      <td>157.2</td>
+
+                      <td>6 3/16</td>
+                      <td>157.2</td>
+
+                      <td>6 3/16</td>
+                      <td>157.2</td>
+
+                      <td>6 3/16</td>
+                      <td>157.2</td>
+
+                      <td>6 3/16</td>
+                      <td>157.2</td>
+
+                      <td>6 3/16</td>
+                      <td>157.2</td>
+                      <td>6 3/16</td>
+
+                      <td>157.2</td>
+                    </tr>
+
+                    <tr>
+                      <td>D1</td>
+
+                      <td>7 1/2</td>
+                      <td>190</td>
+
+                      <td>7 7/8</td>
+                      <td>200</td>
+
+                      <td>7 7/8</td>
+                      <td>200</td>
+
+                      <td>8 1/2</td>
+                      <td>215.9</td>
+
+                      <td>9 1/4</td>
+                      <td>235</td>
+
+                      <td>9 1/2</td>
+                      <td>241</td>
+                      <td>10 3/4</td>
+
+                      <td>273</td>
+                    </tr>
+
+                    <tr>
+                      <td>n</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                    </tr>
+
+                    <tr>
+                      <td>d</td>
+
+                      <td>4-Mar</td>
+                      <td>19</td>
+
+                      <td>8-Jul</td>
+                      <td>22.2</td>
+
+                      <td>1</td>
+                      <td>25.4</td>
+
+                      <td>1</td>
+                      <td>25.4</td>
+
+                      <td>1 1/4</td>
+                      <td>31.8</td>
+
+                      <td>1 3/8</td>
+                      <td>34.9</td>
+                      <td>1 5/8</td>
+
+                      <td>41.3</td>
+                    </tr>
+
+                    <tr>
+                      <th rowSpan={7}>5</th>
+                    </tr>
+
+                    <tr>
+                      <td>A</td>
+
+                      <td>10</td>
+                      <td>254</td>
+
+                      <td>11</td>
+                      <td>279.4</td>
+
+                      <td>11</td>
+                      <td>279.4</td>
+
+                      <td>13</td>
+                      <td>330.2</td>
+
+                      <td>13 3/4</td>
+                      <td>349</td>
+
+                      <td>14 3/4</td>
+                      <td>375</td>
+                      <td>16 1/2</td>
+
+                      <td>419</td>
+                    </tr>
+                    <tr>
+                      <td>b</td>
+
+                      <td>1 5/16</td>
+                      <td>23.8</td>
+
+                      <td>13/8</td>
+                      <td>34.9</td>
+
+                      <td>1 1/2</td>
+                      <td>38.1</td>
+
+                      <td>1 3/4</td>
+                      <td>44.4</td>
+
+                      <td>2</td>
+                      <td>50.8</td>
+
+                      <td>2 7/8</td>
+                      <td>73</td>
+                      <td>3 5/8</td>
+
+                      <td>92.1</td>
+                    </tr>
+                    <tr>
+                      <td>D2</td>
+
+                      <td>7 5/16</td>
+                      <td>185.7</td>
+
+                      <td>7 5/16</td>
+                      <td>185.7</td>
+
+                      <td>7 5/16</td>
+                      <td>185.7</td>
+
+                      <td>7 5/16</td>
+                      <td>185.7</td>
+
+                      <td>7 5/16</td>
+                      <td>185.7</td>
+
+                      <td>7 5/16</td>
+                      <td>185.7</td>
+                      <td>7 5/16</td>
+
+                      <td>185.7</td>
+                    </tr>
+                    <tr>
+                      <td>D1</td>
+
+                      <td>8 1/2</td>
+                      <td>215.9</td>
+
+                      <td>9 1/4</td>
+                      <td>234.9</td>
+
+                      <td>9 1/4</td>
+                      <td>234.9</td>
+
+                      <td>10 1/2</td>
+                      <td>266.7</td>
+
+                      <td>11</td>
+                      <td>279</td>
+
+                      <td>11 1/2</td>
+                      <td>292</td>
+                      <td>12 3/4</td>
+
+                      <td>324</td>
+                    </tr>
+                    <tr>
+                      <td>n</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>d</td>
+
+                      <td>8-Jul</td>
+                      <td>22.2</td>
+
+                      <td>8-Jul</td>
+                      <td>22.2</td>
+
+                      <td>1</td>
+                      <td>25.4</td>
+
+                      <td>1 1/8</td>
+                      <td>28.6</td>
+
+                      <td>1 3/8</td>
+                      <td>34.9</td>
+
+                      <td>1 5/8</td>
+                      <td>41.3</td>
+                      <td>1 7/8</td>
+
+                      <td>47.6</td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </div>
+            </div>
+          ) : (
+            ''
+          )}
+
+          {/* Flanges part 2 end */}
           {props.tablefittingIfTrueExtra === 'true' ? (
             <div className="my-4">
               <div className="px-lg-5 px-0">

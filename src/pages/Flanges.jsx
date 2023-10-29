@@ -8,16 +8,21 @@ const Flanges = () => {
     metaDescription: '',
     h1: 'Flanges',
     imageSection: FlangesImage,
+    heading1Main:
+      'Flanges Manufacturer & Supplier in India – Parmeshwar Steel Center',
     aboutSection: {
       paragraph1:
-        'Flanges are used to connect pipes with each other, to valves, to fittings, and to specialty items such as strainers and pressure vessels. A cover plate can be connected to create a blind flange. Flanges are joined by bolting, and sealing is often completed with the use of gaskets or other methods.',
+        'Parmeshwar Steel Center is a leading Flanges Manufacturer in India, supplying high-quality products consistently with our superior infrastructure. Our experienced engineers and value-driven business operations make us one of the largest and most trusted Flanges Manufacturer in the industry. We specialize in custom-size Flanges to meet our customers unique industrial needs. we have ruled this industry as the Best Flanges Manufacturers and Flanges Suppliers in India.',
     },
 
     productTables: {
       title: 'Types of Flanges',
+      pointHead:
+        'Slip-On Flanges Manufacturer, Socketweld Flanges Supplier, Flanges Manufacturer in India',
+      pointPara:
+        '	At Parmeshwar steel center, we use high-quality raw materials and have skilled professionals to ensure that our Socketweld Flanges and Slip-On Flanges meet global standards and have excellent heat and damage resistance. When selecting a Flanges manufacturer in India, quality and experience are critical factors to consider. Our Flanges are used across various industries due to their high corrosion resistance and weldability. We offer various grades & materials such as Stainless Steel, Carbon Steel, Alloy Steel, Duplex Steel, etc. based on customer needs. Additionally, we are a leading Pipes Manufacturer in India.',
       title1: 'Metal Available for Flanges',
       heading: [{ Srno: 'Sr.no', title: 'Flanges' }],
-      heading1: [{ Srno: 'Sr.no', title: 'Metal' }],
       points: [
         { id: '1', points: 'Weld neck Flange' },
         { id: '2', points: 'Slip on Flange' },
@@ -27,21 +32,9 @@ const Flanges = () => {
         { id: '6', points: 'Threaded Flange' },
         { id: '7', points: 'Lap Joint Flange (RTJ)' },
       ],
-      points1: [
-        { id: '1', points: 'MS' },
-        { id: '2', points: 'Copper' },
-        { id: '3', points: 'Steel' },
-        { id: '4', points: 'Bronze' },
-        { id: '5', points: 'Stainless-Steel' },
-        { id: '6', points: 'Alluminium' },
-        { id: '7', points: 'Nickel' },
-        { id: '8', points: 'Monel' },
-        { id: '9', points: 'Gunmetel' },
-        { id: '10', points: 'Brass' },
-        { id: '11', points: 'Non-Ferrous Allow' },
-        { id: '12', points: 'Ferrous Allow' },
-      ],
     },
+    ifFlangesTrue: 'true',
+    tableFlangesIfTrue: 'true',
   };
   return <ProductsDetails {...post} />;
 };
