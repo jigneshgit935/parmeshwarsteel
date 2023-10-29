@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout/Layout';
-import Banner from '../../components/Banner/Banner';
+// import Banner from '../../components/Banner/Banner';
 import About from '../../components/About/About';
 import Services from '../../components/Services/Services';
 import IndustryServe from '../../components/IndustryServe/IndustryServe';
