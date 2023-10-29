@@ -6,13 +6,15 @@ import Services from '../../components/Services/Services';
 import IndustryServe from '../../components/IndustryServe/IndustryServe';
 import Slider from '../../components/Slider/Slider';
 import Counter from '../../components/Counter/Counter';
+import Test from '../../components/TEst/Test';
 
 const Home = () => {
   return (
     <>
       <Layout>
         <div>
-          <Banner />
+          {/* <Banner /> */}
+          <Test />
           <About />
           <Services />
           <IndustryServe />

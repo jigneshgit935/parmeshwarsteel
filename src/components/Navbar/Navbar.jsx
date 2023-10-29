@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className={`borderMain ${show}`}>
+      <nav className={`borderMain ${show}`}>
         <div
           className="px-lg-5 px-3 navbar d-flex justify-content-between m-auto"
           style={{ height: '100px' }}
@@ -134,7 +134,7 @@ const Navbar = () => {
             )}
           </div>
         </div>
-      </header>
+      </nav>
     </>
   );
 };
