@@ -10,6 +10,7 @@
     url(../../assets/contactBg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all ease-in-out 0.8s;
 }
 .bgimgcontacthere {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
