@@ -91,7 +91,15 @@ const Navbar = () => {
                   Products
                 </Link>
               </li>
-
+              <li className="nav-item">
+                <Link
+                  to="/quality"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Quality
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link
                   to="/contact"

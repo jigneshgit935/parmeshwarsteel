@@ -95,7 +95,7 @@ const Contact = () => {
   };
   return (
     <Layout>
-      <div className=" ">
+      <motion.div className=" ">
         <motion.div
           variants={backgroundImage}
           initial="initial"
@@ -147,7 +147,7 @@ const Contact = () => {
             </motion.div>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </Layout>
   );
 };

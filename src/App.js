@@ -17,6 +17,7 @@ import Rods from './pages/Rods';
 import { useEffect, useState } from 'react';
 import Preloader from './components/Preloader/Preloader';
 import About from './components/About/About';
+import Quality from './pages/Quality/Quality';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -35,6 +36,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Product />} />
+            <Route path="/quality" element={<Quality />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/fittings" element={<Fittings />} />
