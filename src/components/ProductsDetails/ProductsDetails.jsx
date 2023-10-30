@@ -349,14 +349,142 @@ const ProductsDetails = (props) => {
 
           {/* Flanges */}
           {props.ifFlangesTrue === 'true' ? (
+            <div className="px-lg-5 px-0">
+              <h3>Flanges Grades & Specifications:</h3>
+              <p className="paraSizeEx">
+                For the needs of any project, these flanges are available in a
+                range of grades and standards. In order for you to purchase
+                flanges with assurance, we have listed the various grades and
+                specifications in this chart.
+              </p>
+              <Table
+                bordered
+                responsive="md"
+                style={{ border: '1px solid #000' }}
+              >
+                <tbody className="text-center">
+                  <tr>
+                    <th>Flanges</th>
+                    <th>Specifications</th>
+                  </tr>
+                  <tr>
+                    <th className="fw-bold table-th-width">Type of Flanges</th>
+                    <td>
+                      Slip-On, Weld Neck, Long Weld Neck, Threaded, Blind,
+                      Companion, Lap Joint.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Size</th>
+                    <td>1/2″ (15 NB) to 48″ (1200NB) DN10~DN5000.</td>
+                  </tr>
+                  <tr>
+                    <th>Type</th>
+                    <td>
+                      Raised Face (RF), Flat Face (FF), Ring Type Joint (RTJ),
+                      Lap-Joint Face (LJF), Large Male-Female (LMF), Small
+                      Male-Female (SMF), Large Tongue & Groove, Small Tongue,
+                      Groove.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colSpan="2">Brand</th>
+                  </tr>
+                  <tr>
+                    <td className="fw-bold table-th-width" rowSpan="7">
+                      Stainless Steel
+                    </td>
+                    <td>
+                      <b>200 Series – </b>201, 202, 205.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>300 Series</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      301, 302, 303, 304, 304L, 308, 309, 309S, 310, 310S, 314,
+                      316, 316L, 316TI, 317, 317L, 321, 347.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>400 Series</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      405, 409, 429, 430, 430F, 430FSe, 434, 436, 442, 446, 403,
+                      410, 414,416, 416Se, 420,420F, 422, 431, 440A, 440B, 440C.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b> 500 Series – </b>501, 502.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>600 Series –</b> 630 (17-4 PH).
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="fw-bold" rowSpan={2}>
+                      Carbon Steel
+                    </td>
+                    <td>ASTM / ASME A105.</td>
+                  </tr>
+                  <tr>
+                    <td>ASTM / ASME A 350 LF 2 .</td>
+                  </tr>
+                  <tr>
+                    <td className="fw-bold">Alloy Steel</td>
+                    <td>
+                      ASTM / ASME A 182 GR F 5, F 9 , F 11 , F 12 , F 22 , F 91.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="fw-bold">Duplex / Super Duplex Steel</td>
+                    <td>
+                      D S31803, D S32205, SD S32750, SD S32760, SD S32950.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="fw-bold">Inconel</td>
+                    <td>601, 625, 660A, 718, X-750, 825, 925, 608.</td>
+                  </tr>
+
+                  <tr>
+                    <td className="fw-bold">Monel</td>
+                    <td>400, K500.</td>
+                  </tr>
+
+                  <tr>
+                    <td className="fw-bold">Hastelloy</td>
+                    <td>C22, C276, X, B-2.</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </div>
+          ) : (
+            ''
+          )}
+          {/* Flanges */}
+
+          {/* Flanges part 2 start */}
+          {props.tableFlangesIfTrue === 'true' ? (
             <div className="my-4">
               <div className="px-lg-5 px-0">
-                <h3>Flanges Grades & Specifications:</h3>
+                <h3>Dimensions Chart Of Flanges:</h3>
                 <p className="paraSizeEx">
-                  For the needs of any project, these flanges are available in a
-                  range of grades and standards. In order for you to purchase
-                  flanges with assurance, we have listed the various grades and
-                  specifications in this chart.
+                  The size and type of flange might change its dimensions. We
+                  will discuss the various flange dimensions in this chart and
+                  present a chart to help you in choosing the right flange for
+                  your requirements
                 </p>
 
                 <Table
@@ -1168,6 +1296,304 @@ const ProductsDetails = (props) => {
 
                       <td>54</td>
                     </tr>
+
+                    <tr>
+                      <th rowSpan={7}>8</th>
+                    </tr>
+
+                    <tr>
+                      <td>A</td>
+
+                      <td>13 1/2</td>
+                      <td>342.9</td>
+
+                      <td>15</td>
+                      <td>381</td>
+
+                      <td>15</td>
+                      <td>381</td>
+
+                      <td>16 1/2</td>
+                      <td>419</td>
+
+                      <td>18 1/2</td>
+                      <td>470</td>
+
+                      <td>19</td>
+                      <td>482.6</td>
+                      <td>21 3/4</td>
+
+                      <td>552</td>
+                    </tr>
+                    <tr>
+                      <td>b</td>
+
+                      <td>1 1/8</td>
+                      <td>28.6</td>
+
+                      <td>1 5/8</td>
+                      <td>41.3</td>
+
+                      <td>1 7/8</td>
+                      <td>47.6</td>
+
+                      <td>2 3/16</td>
+                      <td>55.6</td>
+
+                      <td>2 1/2</td>
+                      <td>63.5</td>
+
+                      <td>3 5/8</td>
+                      <td>92.1</td>
+                      <td>5</td>
+
+                      <td>127</td>
+                    </tr>
+                    <tr>
+                      <td>D2</td>
+
+                      <td>10 5/8</td>
+                      <td>269.9</td>
+
+                      <td>10 5/8</td>
+                      <td>269.9</td>
+
+                      <td>10 5/8</td>
+                      <td>269.9</td>
+
+                      <td>10 5/8</td>
+                      <td>269.9</td>
+
+                      <td>10 5/8</td>
+                      <td>269.9</td>
+
+                      <td>10 5/8</td>
+                      <td>269.9</td>
+                      <td>10 5/8</td>
+
+                      <td>269.9</td>
+                    </tr>
+                    <tr>
+                      <td>D1</td>
+
+                      <td>11 3/4</td>
+                      <td>298.4</td>
+
+                      <td>13</td>
+                      <td>330.2</td>
+
+                      <td>13</td>
+                      <td>330.2</td>
+
+                      <td>13 3/4</td>
+                      <td>349.2</td>
+
+                      <td>15 1/2</td>
+                      <td>394.2</td>
+
+                      <td>15 1/2</td>
+                      <td>394.2</td>
+                      <td>17 1/4</td>
+
+                      <td>438</td>
+                    </tr>
+                    <tr>
+                      <td>n</td>
+
+                      <td>8</td>
+                      <td>8</td>
+
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>d</td>
+
+                      <td>8-Jul</td>
+                      <td>22.2</td>
+
+                      <td>1</td>
+                      <td>25.4</td>
+
+                      <td>1 1/8</td>
+                      <td>28.6</td>
+
+                      <td>1 1/4</td>
+                      <td>31.8</td>
+
+                      <td>1 1/2</td>
+                      <td>38.1</td>
+
+                      <td>1 3/4</td>
+                      <td>44.5</td>
+                      <td>2 1/8</td>
+
+                      <td>54</td>
+                    </tr>
+
+                    <tr>
+                      <th rowSpan={7}>10</th>
+                    </tr>
+
+                    <tr>
+                      <td>A</td>
+
+                      <td>16</td>
+                      <td>406.4</td>
+
+                      <td>17 1/2</td>
+                      <td>444.5</td>
+
+                      <td>17 1/2</td>
+                      <td>444.5</td>
+
+                      <td>20</td>
+                      <td>508</td>
+
+                      <td>21 1/2</td>
+                      <td>546</td>
+
+                      <td>23</td>
+                      <td>584</td>
+                      <td>26 1/2</td>
+
+                      <td>673</td>
+                    </tr>
+                    <tr>
+                      <td>b</td>
+
+                      <td>1 3/16</td>
+                      <td>30.2</td>
+
+                      <td>1 7/8</td>
+                      <td>47.6</td>
+
+                      <td>2 1/8</td>
+                      <td>54</td>
+
+                      <td>2 1/2</td>
+                      <td>63.5</td>
+
+                      <td>2 3/4</td>
+                      <td>69.8</td>
+
+                      <td>4 1/4</td>
+                      <td>108</td>
+                      <td>6 1/2</td>
+
+                      <td>165</td>
+                    </tr>
+                    <tr>
+                      <td>D2</td>
+
+                      <td>12 3/4</td>
+                      <td>323.8</td>
+
+                      <td>12 3/4</td>
+                      <td>323.8</td>
+
+                      <td>12 3/4</td>
+                      <td>323.8</td>
+
+                      <td>12 3/4</td>
+                      <td>323.8</td>
+
+                      <td>12 3/4</td>
+                      <td>323.8</td>
+
+                      <td>12 3/4</td>
+                      <td>323.8</td>
+                      <td>12 3/4</td>
+
+                      <td>323.8</td>
+                    </tr>
+                    <tr>
+                      <td>D1</td>
+
+                      <td>14 1/4</td>
+                      <td>361.9</td>
+
+                      <td>15 1/4</td>
+                      <td>387.4</td>
+
+                      <td>15 1/4</td>
+                      <td>387.4</td>
+
+                      <td>17</td>
+                      <td>431.8</td>
+
+                      <td>18 1/2</td>
+                      <td>470</td>
+
+                      <td>19</td>
+                      <td>482.6</td>
+                      <td>21 1/4</td>
+
+                      <td>540</td>
+                    </tr>
+                    <tr>
+                      <td>n</td>
+
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>16</td>
+                      <td>16</td>
+
+                      <td>16</td>
+                      <td>16</td>
+
+                      <td>16</td>
+                      <td>16</td>
+
+                      <td>16</td>
+                      <td>16</td>
+
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>d</td>
+
+                      <td>1</td>
+                      <td>25.4</td>
+
+                      <td>1 1/8</td>
+                      <td>28.6</td>
+
+                      <td>1 1/4</td>
+                      <td>31.8</td>
+
+                      <td>1 3/8</td>
+                      <td>34.9</td>
+
+                      <td>1 1/2</td>
+                      <td>38.1</td>
+
+                      <td>2</td>
+                      <td>50.8</td>
+                      <td>2 5/8</td>
+
+                      <td>66</td>
+                    </tr>
                   </tbody>
                 </Table>
               </div>
@@ -1175,7 +1601,6 @@ const ProductsDetails = (props) => {
           ) : (
             ''
           )}
-
           {/* Flanges part 2 end */}
           {props.tablefittingIfTrueExtra === 'true' ? (
             <div className="my-4">

@@ -19,14 +19,14 @@ const productData = [
     img: ImageOne,
   },
   {
-    link: '/pipes',
-    name: 'Pipes',
-    img: ImageTwo,
-  },
-  {
     link: '/flanges',
     name: 'Flanges',
     img: ImageThree,
+  },
+  {
+    link: '/pipes',
+    name: 'Pipes',
+    img: ImageTwo,
   },
   {
     link: '/bold-fastners',
