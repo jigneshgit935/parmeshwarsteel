@@ -1,45 +1,118 @@
 import React from 'react';
 import './Quality.css';
+import { motion } from 'framer-motion';
 import QualityCheck from '../../assets/qualityCheck.jpg';
 import Layout from '../../components/Layout/Layout';
 
 const Quality = () => {
+  const textVariants = {
+    initial: {
+      x: -500,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 0.5,
+        staggerChildren: 0.2,
+        type: 'spring',
+        stiffness: 100,
+        damping: 14,
+      },
+    },
+  };
+
+  const textVariantsSlow = {
+    initial: {
+      x: 0,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 0.5,
+      },
+    },
+  };
+  const backgroundImage = {
+    initial: {
+      x: 0,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.9,
+        staggerChildren: 0.1,
+      },
+    },
+  };
   return (
     <Layout>
       <>
-        <div
+        <motion.div
+          variants={backgroundImage}
+          initial="initial"
+          animate="animate"
           className="text-center text-white bgImageQuality"
           style={{ padding: '80px 0px' }}
         >
-          <h1 className=" display-3 fw-bold ">Quality</h1>
-        </div>
-        <div className="my-5 container">
-          <div className="d-flex">
-            <h1 className="fw-bold underline-for-heading">
+          <motion.h1
+            variants={textVariants}
+            initial="initial"
+            animate="animate"
+            className=" display-3 fw-bold "
+          >
+            Quality
+          </motion.h1>
+        </motion.div>
+        <motion.div
+          variants={textVariantsSlow}
+          initial="initial"
+          animate="animate"
+          className="my-5 container"
+        >
+          <motion.div className="d-flex">
+            <motion.h1
+              variants={textVariants}
+              initial="initial"
+              animate="animate"
+              className="fw-bold underline-for-heading"
+            >
               Quality Policy & Quality Assurance
-            </h1>
-          </div>
-          <div className="row py-4">
-            <div className="py-lg-3 py-0 col-lg-6 col-12">
-              <div className="row ">
-                <div className="col-lg-6 py-lg-3 py-0 col-md-6 col-12">
-                  <div>
-                    <div className="d-flex justify-content-center">
-                      <img
+            </motion.h1>
+          </motion.div>
+          <motion.div
+            variants={textVariantsSlow}
+            initial="initial"
+            animate="animate"
+            className="row py-4"
+          >
+            <motion.div className="py-lg-3 py-0 col-lg-6 col-12">
+              <motion.div className="row ">
+                <motion.div className="col-lg-6 py-lg-3 py-0 col-md-6 col-12">
+                  <motion.div>
+                    <motion.div className="d-flex justify-content-center">
+                      <motion.img
                         src={QualityCheck}
                         alt="qualityCheckImage"
                         className="img-fluid"
                       />
-                    </div>
-                    <p
+                    </motion.div>
+                    <motip
                       className="mt-lg-3 mt-2"
                       style={{ fontSize: '17px', textAlign: 'justify' }}
                     >
                       The company has over two-decade long record of servicing
                       clienteles on both national and international ground.
-                    </p>
-                  </div>
-                </div>
+                    </motip>
+                  </motion.div>
+                </motion.div>
                 <div className="col-lg-6 col-md-6 col-12">
                   <div>
                     <p
@@ -63,8 +136,8 @@ const Quality = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
             <div className="py-lg-3 py-0 col-lg-6 col-12 d-flex flex-column alignborderforQuality">
               <p
                 className="mt-lg-3 mt-2"
@@ -97,8 +170,8 @@ const Quality = () => {
                 the kanban system, poka yoke, and just in time.
               </p>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </>
     </Layout>
   );
