@@ -35,12 +35,12 @@ const address = [
     subpara:
       ' 6, Gr. Floor, 10/12, Shankar Marwadi chawl, X Crosslane, 4th Khetwadi, Girgaon, Mumbai - 400 004',
   },
-  {
-    icons: <SlLocationPin size={60} color="blue" />,
-    name: 'Godown Address',
-    subpara:
-      ' 6, Gr. Floor, 10/12, Shankar Marwadi chawl, X Crosslane, 4th Khetwadi, Girgaon, Mumbai - 400 004',
-  },
+  // {
+  //   icons: <SlLocationPin size={60} color="blue" />,
+  //   name: 'Godown Address',
+  //   subpara:
+  //     ' 6, Gr. Floor, 10/12, Shankar Marwadi chawl, X Crosslane, 4th Khetwadi, Girgaon, Mumbai - 400 004',
+  // },
 ];
 
 const Contact = () => {

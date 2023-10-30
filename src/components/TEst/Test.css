@@ -1,9 +1,0 @@
-.test {
-  height: calc(100vh - 100px);
-  overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
-    url(../../assets/bannerBg2.jpg) no-repeat center;
-  background-size: cover;
-  position: relative;
-  transition: all ease-in-out 0.8s;
-}
