@@ -1,17 +1,44 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 import './Counter.css';
+import { motion, useInView } from 'framer-motion';
 
 const Counter = ({ className, ...rest }) => {
   const [counterOn, setCounterOn] = useState(false);
+  const variants = {
+    initial: {
+      x: 0,
+      y: 0,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+  const ref = useRef();
+
+  const isInView = useInView(ref, { margin: '-50px' });
   return (
     <ScrollTrigger
       onEnter={() => setCounterOn(true)}
       onExit={() => setCounterOn(false)}
     >
-      <div className="my-5">
-        <div className="py-5 bgCounterImage">
+      <motion.div
+        className="my-5"
+        variants={variants}
+        initial="initial"
+        whileInView="animate"
+        ref={ref}
+        animate={isInView && 'animate'}
+      >
+        <motion.div className="py-5 bgCounterImage">
           <div className="container py-lg-5 py-md-2 py-0 text-white">
             <div className="row  text-center justify-content-center ">
               <div className="col-12 col-md-6 col-lg-3 my-lg-0 my-md-4 my-4">
@@ -53,8 +80,8 @@ const Counter = ({ className, ...rest }) => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </ScrollTrigger>
   );
 };

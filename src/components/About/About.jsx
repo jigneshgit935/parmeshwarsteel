@@ -34,7 +34,7 @@ const About = () => {
       className="px-lg-5 px-md-4 px-3 py-5"
     >
       <div className="py-lg-5 py-0">
-        <div className="d-flex flex-wrap ">
+        <div className="d-flex flex-wrap">
           <motion.div
             variants={variants}
             className="col-lg-6 col-12 d-flex  justify-content-center align-items-center"
@@ -56,17 +56,20 @@ const About = () => {
                 <h1 className="fw-bold underline-for-heading">About Us</h1>
               </motion.div>
               <motion.div variants={variants} className="">
-                <p
+                <motion.p
+                  variants={variants}
                   className="mt-lg-4 mt-3"
                   style={{ fontSize: '18px', textAlign: 'justify' }}
                 >
-                  We, Parmeshwar Steel Center founded in 1980's by our visionary
-                  entrepreneur Shri XYZ having an experience of more than 3
-                  decades in this field, Parmeshwar Steel Center is now a well
-                  established and learning manufacturers and suppliers of&nbsp;
+                  We, Parmeshwar Steel Center founded in 1995 by our visionary
+                  entrepreneur Shri T H Purohit having an experience of more
+                  than 3 decades in this field, Parmeshwar Steel Center is now a
+                  well established and learning manufacturers and suppliers
+                  of&nbsp;
                   <b>PIPE FITTINGS, FLANGES and FASTENERS</b>.
-                </p>
-                <p
+                </motion.p>
+                <motion.p
+                  variants={variants}
                   className="mt-lg-4 mt-3"
                   style={{ fontSize: '18px', textAlign: 'justify' }}
                 >
@@ -77,8 +80,9 @@ const About = () => {
                   of product, extensive product range, capabilities to supply on
                   demand, scalabilty and efficient management to become a real "
                   <b>Partner in Progress</b>" for clients.
-                </p>
-                <p
+                </motion.p>
+                <motion.p
+                  variants={variants}
                   className="mt-lg-4 mt-3"
                   style={{ fontSize: '18px', textAlign: 'justify' }}
                 >
@@ -86,7 +90,7 @@ const About = () => {
                   who's and who of Oil & Gas, Petrochemicals, Refineries, Power,
                   Steel, Chemical & Fertilizer, Water Treatment, Offshore,
                   Nuclear and other sectors in India and globally.
-                </p>
+                </motion.p>
               </motion.div>
             </div>
           </div>
