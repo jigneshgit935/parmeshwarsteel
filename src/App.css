@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
 }
+
 ::-webkit-scrollbar {
   width: 6px;
 }
