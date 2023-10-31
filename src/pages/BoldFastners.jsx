@@ -4,8 +4,9 @@ import BoltsImage from '../assets/boltInside.jpg';
 
 const BoldFastners = () => {
   const post = {
-    title: '',
-    metaDescription: '',
+    title: 'Bold / Fastners',
+    metaDescription:
+      'Parmeshwar Steel - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India.',
     imageSection: BoltsImage,
     h1: 'Bold / Fastners',
     aboutSection: {

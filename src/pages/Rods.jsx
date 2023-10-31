@@ -4,8 +4,9 @@ import RodsImage from '../assets/steelRodes.jpg';
 
 const Rods = () => {
   const post = {
-    title: '',
-    metaDescription: '',
+    title: 'Rods',
+    metaDescription:
+      'Parmeshwar Steel - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India.',
     h1: 'Rods',
     imageSection: RodsImage,
     aboutSection: {

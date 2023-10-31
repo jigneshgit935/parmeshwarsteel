@@ -4,7 +4,8 @@ import Layout from '../../components/Layout/Layout';
 import { motion } from 'framer-motion';
 import TableContent from '../../components/TableContent/TableContent';
 import ProductCard from '../../components/ProductCard/ProductCard';
-
+import { Helmet } from 'react-helmet';
+const headline = 'Products';
 const Product = () => {
   const textVariants = {
     initial: {
@@ -40,6 +41,21 @@ const Product = () => {
   };
   return (
     <Layout>
+      <Helmet>
+        <title>{headline} - Parmeshwar Steel Center</title>
+        <meta
+          name="description"
+          content="Parmeshwar Steel - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India."
+        />
+        <meta
+          name="keywords"
+          content="Flanges, Pipes, Bold / Fastners, Angle / Channels, Bars / Wires, percentage alloys, Rods"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </Helmet>
       <motion.div className="pb-4">
         <motion.div
           variants={backgroundImage}

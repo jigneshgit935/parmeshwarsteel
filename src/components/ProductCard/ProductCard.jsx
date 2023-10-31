@@ -14,47 +14,47 @@ import { motion, useInView } from 'framer-motion';
 
 const productData = [
   {
-    link: '/fittings',
+    link: '/fittings-manufacturer-in-india',
     name: 'Fittings',
     img: ImageOne,
   },
   {
-    link: '/flanges',
+    link: '/flanges-manufacturer-in-india',
     name: 'Flanges',
     img: ImageThree,
   },
   {
-    link: '/pipes',
+    link: '/pipes-manufacturer-in-india',
     name: 'Pipes',
     img: ImageTwo,
   },
   {
-    link: '/bold-fastners',
+    link: '/bold-fastners-manufacturer-in-india',
     name: 'Bold / Fastners',
     img: ImageFor,
   },
   {
-    link: '/angle-channels',
+    link: '/angle-channels-manufacturer-in-india',
     name: 'Angle / Channels',
     img: AngleChannel,
   },
   {
-    link: '/steets-plates',
+    link: '/steets-plates-manufacturer-in-india',
     name: 'Steets / PLates',
     img: ImageEight,
   },
   {
-    link: '/bars-wires',
+    link: '/bars-wires-manufacturer-in-india',
     name: 'Bars / Wires',
     img: Bars,
   },
   {
-    link: '/percentage-alloys',
+    link: '/percentage-alloys-manufacturer-in-india',
     name: 'percentage alloys',
     img: ImageTen,
   },
   {
-    link: '/rods',
+    link: '/rods-manufacturer-in-india',
     name: 'Rods',
     img: RodsProduct,
   },

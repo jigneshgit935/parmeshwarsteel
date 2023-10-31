@@ -110,7 +110,7 @@ const Footer = () => {
                 </li>
                 <li className="mt-lg-3 mt-md-3 mt-3">
                   <Link className="link-tagfooter" to="#about">
-                    About Us
+                    Quality
                   </Link>
                 </li>
                 <li className="mt-lg-3 mt-md-3 mt-3">

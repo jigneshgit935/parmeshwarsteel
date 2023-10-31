@@ -6,16 +6,20 @@ import { VscDebugStepInto } from 'react-icons/vsc';
 import './Contact.css';
 import Layout from '../../components/Layout/Layout';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 const address = [
   {
     icons: <LiaPhoneVolumeSolid size={60} color="blue" />,
     personInfo: '+91 9869037711',
+    contact: 'tel:9869037711',
     namesperson: '(Jayesh Purohit)',
   },
   {
     icons: <TfiEmail size={60} color="blue" />,
     personInfo: 'psc11mail@gmail.com',
+    contact: 'mailto:psc11mail@gmail.com',
     namesperson: 'Email',
   },
   {
@@ -35,13 +39,9 @@ const address = [
     subpara:
       ' 6, Gr. Floor, 10/12, Shankar Marwadi chawl, X Crosslane, 4th Khetwadi, Girgaon, Mumbai - 400 004',
   },
-  // {
-  //   icons: <SlLocationPin size={60} color="blue" />,
-  //   name: 'Godown Address',
-  //   subpara:
-  //     ' 6, Gr. Floor, 10/12, Shankar Marwadi chawl, X Crosslane, 4th Khetwadi, Girgaon, Mumbai - 400 004',
-  // },
 ];
+
+const headline = 'Contact';
 
 const Contact = () => {
   const textVariants = {
@@ -95,6 +95,21 @@ const Contact = () => {
   };
   return (
     <Layout>
+      <Helmet>
+        <title>{headline} - Parmeshwar Steel Center</title>
+        <meta
+          name="description"
+          content="Parmeshwar Steel - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India."
+        />
+        <meta
+          name="keywords"
+          content="Flanges, Pipes, Bold / Fastners, Angle / Channels, Bars / Wires, percentage alloys, Rods"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </Helmet>
       <motion.div className=" ">
         <motion.div
           variants={backgroundImage}
@@ -133,7 +148,14 @@ const Contact = () => {
                       <motion.div className="contactContainer shadow text-center py-3 px-5  d-flex flex-column justify-content-evenly align-items-center">
                         <motion.span className="mt-3">{item.icons}</motion.span>
                         <motion.span className="">{item.gstin}</motion.span>
-                        <motion.h3 className="">{item.personInfo}</motion.h3>
+                        <motion.h3 className="">
+                          <Link
+                            to={item.contact}
+                            className="link-tagfooter text-black"
+                          >
+                            {item.personInfo}
+                          </Link>
+                        </motion.h3>
                         <motion.span className="">
                           {item.namesperson}
                         </motion.span>

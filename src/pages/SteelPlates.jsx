@@ -4,10 +4,10 @@ import SheetImage from '../assets/sheetplateinside.jpeg';
 
 const SteelPlates = () => {
   const post = {
-    title: '',
-    metaDescription: '',
+    title: 'Steets / PLates',
+    metaDescription:
+      'Parmeshwar Steel - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India.',
     imageSection: SheetImage,
-
     h1: 'Steets / PLates',
     aboutSection: {},
 

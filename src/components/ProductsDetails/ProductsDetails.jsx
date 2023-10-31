@@ -4,11 +4,27 @@ import { Link } from 'react-router-dom';
 import { Table } from 'react-bootstrap';
 import { BsArrowLeft } from 'react-icons/bs';
 import './ProductsDetails.css';
+import { Helmet } from 'react-helmet';
 
 const ProductsDetails = (props) => {
   console.log(props);
   return (
     <Layout>
+      <Helmet>
+        <title>{props.title} - Parmeshwar Steel Center</title>
+        <meta
+          name="description"
+          content="Parmeshwar Steel - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India."
+        />
+        <meta
+          name="keywords"
+          content="Flanges, Pipes, Bold / Fastners, Angle / Channels, Bars / Wires, percentage alloys, Rods"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </Helmet>
       <div className="py-3 px-lg-3 px-2 border">
         <div className="">
           <Link to="/products">

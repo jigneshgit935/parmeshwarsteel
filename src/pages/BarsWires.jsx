@@ -4,8 +4,9 @@ import BarsImage from '../assets/barandwire.jpeg';
 
 const BarsWires = () => {
   const post = {
-    title: '',
-    metaDescription: '',
+    title: 'Bars / Wires',
+    metaDescription:
+      'Parmeshwar Steel - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India.',
     imageSection: BarsImage,
     h1: 'Bars / Wires',
     aboutSection: {},

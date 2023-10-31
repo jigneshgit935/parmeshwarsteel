@@ -8,7 +8,6 @@ import Fittings from './pages/Fittings';
 import Pipes from './pages/Pipes';
 import Flanges from './pages/Flanges';
 import ICFittings from './pages/BoldFastners';
-import Wire from './pages/Wire';
 import BarsWires from './pages/BarsWires';
 import SteelPlates from './pages/SteelPlates';
 import AngleChannels from './pages/AngleChannels';
@@ -39,16 +38,37 @@ function App() {
             <Route path="/quality" element={<Quality />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path="/fittings" element={<Fittings />} />
-            <Route path="/pipes" element={<Pipes />} />
-            <Route path="/flanges" element={<Flanges />} />
-            <Route path="/bold-fastners" element={<ICFittings />} />
-            <Route path="/angle-channels" element={<AngleChannels />} />
-            <Route path="/rods" element={<Rods />} />
-            <Route path="/bars-wires" element={<BarsWires />} />
-            <Route path="/steets-plates" element={<SteelPlates />} />
-            <Route path="/wires-bars" element={<Wire />} />
-            <Route path="/percentage-alloys" element={<PercentageAlloys />} />
+            <Route
+              path="/fittings-manufacturer-in-india"
+              element={<Fittings />}
+            />
+            <Route path="/pipes-manufacturer-in-india" element={<Pipes />} />
+            <Route
+              path="/flanges-manufacturer-in-india"
+              element={<Flanges />}
+            />
+            <Route
+              path="/bold-fastners-manufacturer-in-india"
+              element={<ICFittings />}
+            />
+            <Route
+              path="/angle-channels-manufacturer-in-india"
+              element={<AngleChannels />}
+            />
+            <Route path="/rods-manufacturer-in-india" element={<Rods />} />
+            <Route
+              path="/bars-wires-manufacturer-in-india"
+              element={<BarsWires />}
+            />
+            <Route
+              path="/steets-plates-manufacturer-in-india"
+              element={<SteelPlates />}
+            />
+
+            <Route
+              path="/percentage-alloys-manufacturer-in-india"
+              element={<PercentageAlloys />}
+            />
           </Routes>
         </div>
       )}

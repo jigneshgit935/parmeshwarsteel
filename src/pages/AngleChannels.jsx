@@ -4,8 +4,9 @@ import AngleImage from '../assets/angleinside.png';
 
 const AngleChannels = () => {
   const post = {
-    title: '',
-    metaDescription: '',
+    title: 'Angle / Channels',
+    metaDescription:
+      'Parmeshwar Steel - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India.',
     imageSection: AngleImage,
     h1: 'Angle / Channels',
     aboutSection: {

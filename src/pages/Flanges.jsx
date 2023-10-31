@@ -4,8 +4,9 @@ import FlangesImage from '../assets/flangesInside.jpg';
 
 const Flanges = () => {
   const post = {
-    title: '',
-    metaDescription: '',
+    title: 'Flanges',
+    metaDescription:
+      'Parmeshwar Steel - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India.',
     h1: 'Flanges',
     imageSection: FlangesImage,
     heading1Main:

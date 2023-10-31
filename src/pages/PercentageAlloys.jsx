@@ -4,8 +4,9 @@ import PercentageAlloysImage from '../assets/specialalloy.jpg';
 
 const PercentageAlloys = () => {
   const post = {
-    title: '',
-    metaDescription: '',
+    title: 'Percentage Alloys',
+    metaDescription:
+      'Parmeshwar Steel - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India.',
     h1: 'Percentage Alloys',
     imageSection: PercentageAlloysImage,
     aboutSection: {
