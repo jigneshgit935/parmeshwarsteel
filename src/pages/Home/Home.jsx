@@ -18,7 +18,7 @@ const Home = () => {
             <title>{headline} - Parmeshwar Steel Center</title>
             <meta
               name="description"
-              content="Parmeshwar Steel Centre- Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India."
+              content="Parmeshwar Steel Centre - Manufacturer of Stainless Steel Pipes, Carbon Steel Pipe Fittings & Stainless Steel Flanges from Mumbai, Maharashtra, India."
             />
             <meta
               name="keywords"
