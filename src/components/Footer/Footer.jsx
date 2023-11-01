@@ -8,7 +8,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className="px-lg-5 px-md-4 px-3 footerBackground border">
+    <div className="px-lg-5 px-md-4 px-3 footerBackground">
       <div className="">
         <div className="d-flex flex-wrap justify-content-between py-lg-5 py-4 ">
           <div className="col-lg-3  col-md-6 col-12 my-lg-0 my-md-3 mt-3  ">
@@ -137,7 +137,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="">
-        <p className="my-auto">
+        <p className="my-auto parafotter py-3 ">
           &copy; {new Date().getFullYear()} Parmeshwar Steel Center. All rights
           reserved.
         </p>
