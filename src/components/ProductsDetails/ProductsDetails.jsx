@@ -3,11 +3,29 @@ import Layout from '../Layout/Layout';
 import { Link } from 'react-router-dom';
 import { Table } from 'react-bootstrap';
 import { BsArrowLeft } from 'react-icons/bs';
+import { motion, useInView } from 'framer-motion';
 import './ProductsDetails.css';
 import { Helmet } from 'react-helmet';
+import { useRef } from 'react';
 
 const ProductsDetails = (props) => {
-  console.log(props);
+  const textVariantsSlow = {
+    initial: {
+      x: 0,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 0.2,
+      },
+    },
+  };
+  const ref = useRef();
+
+  const isInView = useInView(ref, { margin: '-50px' });
   return (
     <Layout>
       <Helmet>
@@ -39,11 +57,16 @@ const ProductsDetails = (props) => {
               <BsArrowLeft size={30} color="#015583" />
             </button>
           </Link>
-          <div className="d-flex  flex-column justify-content-center align-items-center py-2">
-            <h1 className="display-1 fw-bold m-0 col-12 text-center">
+          <motion.div
+            variants={textVariantsSlow}
+            initial="initial"
+            animate="animate"
+            className="d-flex  flex-column justify-content-center align-items-center py-2"
+          >
+            <motion.h1 className="display-1 fw-bold m-0 col-12 text-center">
               {props.h1}
-            </h1>
-            <div
+            </motion.h1>
+            <motion.div
               className="image-block border my-3"
               style={{
                 width: '600px',
@@ -53,7 +76,7 @@ const ProductsDetails = (props) => {
                 borderRadius: '10px',
               }}
             >
-              <img
+              <motion.img
                 src={props.imageSection}
                 alt={props.h1}
                 className="img-block-child border"
@@ -62,7 +85,7 @@ const ProductsDetails = (props) => {
                   height: '100%',
                 }}
               />
-            </div>
+            </motion.div>
             {!props.heading1Main ? (
               ''
             ) : (
@@ -80,12 +103,19 @@ const ProductsDetails = (props) => {
             ) : (
               ''
             )}
-          </div>
+          </motion.div>
           {!props.productTables.points ? (
             ''
           ) : (
-            <div className="my-4">
-              <div className="px-lg-5 px-0">
+            <motion.div
+              variants={textVariantsSlow}
+              initial="initial"
+              whileInView="animate"
+              ref={ref}
+              animate={isInView && 'animate'}
+              className="my-4"
+            >
+              <motion.div className="px-lg-5 px-0">
                 <>
                   {!props.productTables.pointHead ? (
                     ''
@@ -125,14 +155,21 @@ const ProductsDetails = (props) => {
                     ))}
                   </tbody>
                 </Table>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           )}
           {!props.productTables.points1 ? (
             ''
           ) : (
-            <div className="my-4">
-              <div className="px-lg-5 px-0">
+            <motion.div
+              variants={textVariantsSlow}
+              initial="initial"
+              whileInView="animate"
+              ref={ref}
+              animate={isInView && 'animate'}
+              className="my-4"
+            >
+              <motion.div className="px-lg-5 px-0">
                 {!props.productTables.title1 ? (
                   ''
                 ) : (
@@ -177,12 +214,19 @@ const ProductsDetails = (props) => {
                     ))}
                   </tbody>
                 </Table>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           )}
 
           {props.ifTrue === 'true' ? (
-            <div className="px-lg-5 px-0">
+            <motion.div
+              variants={textVariantsSlow}
+              initial="initial"
+              whileInView="animate"
+              ref={ref}
+              animate={isInView && 'animate'}
+              className="px-lg-5 px-0"
+            >
               <Table
                 bordered
                 responsive="md"
@@ -268,13 +312,20 @@ const ProductsDetails = (props) => {
                   </tr>
                 </tbody>
               </Table>
-            </div>
+            </motion.div>
           ) : (
             ''
           )}
           {props.tablefittingIfTrue === 'true' ? (
-            <div className="my-4">
-              <div className="px-lg-5 px-0">
+            <motion.div
+              variants={textVariantsSlow}
+              initial="initial"
+              whileInView="animate"
+              ref={ref}
+              animate={isInView && 'animate'}
+              className="my-4"
+            >
+              <motion.div className="px-lg-5 px-0">
                 <h3>Stainless Steel Forged Fittings Mechanical Properties</h3>
                 <p className="paraSizeEx">
                   The mechanical properties of the stainless steel forged
@@ -357,15 +408,22 @@ const ProductsDetails = (props) => {
                     </tr>
                   </tbody>
                 </Table>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           ) : (
             ''
           )}
 
           {/* Flanges */}
           {props.ifFlangesTrue === 'true' ? (
-            <div className="px-lg-5 px-0">
+            <motion.div
+              variants={textVariantsSlow}
+              initial="initial"
+              whileInView="animate"
+              ref={ref}
+              animate={isInView && 'animate'}
+              className="px-lg-5 px-0"
+            >
               <h3>Flanges Grades & Specifications:</h3>
               <p className="paraSizeEx">
                 For the needs of any project, these flanges are available in a
@@ -485,7 +543,7 @@ const ProductsDetails = (props) => {
                   </tr>
                 </tbody>
               </Table>
-            </div>
+            </motion.div>
           ) : (
             ''
           )}
@@ -493,8 +551,22 @@ const ProductsDetails = (props) => {
 
           {/* Flanges part 2 start */}
           {props.tableFlangesIfTrue === 'true' ? (
-            <div className="my-4">
-              <div className="px-lg-5 px-0">
+            <motion.div
+              variants={textVariantsSlow}
+              initial="initial"
+              whileInView="animate"
+              ref={ref}
+              animate={isInView && 'animate'}
+              className="my-4"
+            >
+              <motion.div
+                variants={textVariantsSlow}
+                initial="initial"
+                whileInView="animate"
+                ref={ref}
+                animate={isInView && 'animate'}
+                className="px-lg-5 px-0"
+              >
                 <h3>Dimensions Chart Of Flanges:</h3>
                 <p className="paraSizeEx">
                   The size and type of flange might change its dimensions. We
@@ -1612,15 +1684,22 @@ const ProductsDetails = (props) => {
                     </tr>
                   </tbody>
                 </Table>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           ) : (
             ''
           )}
           {/* Flanges part 2 end */}
           {props.tablefittingIfTrueExtra === 'true' ? (
-            <div className="my-4">
-              <div className="px-lg-5 px-0">
+            <motion.div
+              variants={textVariantsSlow}
+              initial="initial"
+              whileInView="animate"
+              ref={ref}
+              animate={isInView && 'animate'}
+              className="my-4"
+            >
+              <motion.div className="px-lg-5 px-0">
                 <h3>Stainless Steel Forged Fittings Chemical Composition</h3>
                 <p className="paraSizeEx">
                   The chemical reactivity of stainless steel Forged Fittings is
@@ -1711,8 +1790,8 @@ const ProductsDetails = (props) => {
                     </tr>
                   </tbody>
                 </Table>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           ) : (
             ''
           )}
